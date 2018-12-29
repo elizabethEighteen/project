@@ -1,0 +1,373 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  margin-top: 1.76rem;
+  margin-bottom: 1.92rem;
+}
+header {
+  width: 100%;
+  height: 1.76rem;
+  background-color: #ec0022;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header .login {
+  width: 2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.68rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0.28rem;
+  left: 0.2rem;
+}
+header .register {
+  width: 2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.68rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0.28rem;
+  right: 0.2rem;
+}
+header img {
+  width: 3.68rem;
+  height: 1.44rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.92rem;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+}
+footer .item {
+  display: block;
+  width: 20%;
+  height: 1.92rem;
+  color: #888;
+  font-size: 0.64rem;
+  line-height: 0.64rem;
+  text-align: center;
+  padding-top: 1.12rem;
+  box-sizing: border-box;
+}
+footer .item.active {
+  color: red;
+}
+footer .index {
+  background: url(../img/indexA.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center 0.2rem;
+}
+footer .purchaseLottery {
+  background: url(../img/purchase.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center 0.2rem;
+}
+footer .trend {
+  background: url(../img/trend.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center 0.2rem;
+}
+footer .mine {
+  background: url(../img/mine.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: center 0.2rem;
+}
+#content {
+  width: 100%;
+}
+#content .banner {
+  width: 100%;
+  height: 4.4rem;
+  position: relative;
+}
+#content .banner ul {
+  width: 100%;
+  height: 4.4rem;
+}
+#content .banner ul li {
+  width: 100%;
+  height: 4.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content .banner ul li img {
+  width: 100%;
+  height: 4.4rem;
+}
+#content .slider {
+  width: 100%;
+  height: 1.28rem;
+  border-bottom: 0.04rem solid #eee;
+  position: relative;
+}
+#content .slider .ad {
+  width: 1.6rem;
+  height: 1.28rem;
+  text-align: center;
+  line-height: 1.28rem;
+  font-size: 0.56rem;
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#content .slider .rightArrow {
+  width: 1.6rem;
+  height: 1.28rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#content .slider .midWrap {
+  width: calc(100% - 3.2rem);
+  height: 1.28rem;
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+  overflow: hidden;
+}
+#content .slider .midWrap .scriptCon {
+  width: 60rem;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.56rem;
+  position: absolute;
+  top: 0;
+  left: 0rem;
+}
+#content .conNav {
+  width: 100%;
+  height: 3.16rem;
+  display: flex;
+  justify-content: space-around;
+}
+#content .conNav .item {
+  width: 20%;
+  height: 100%;
+  padding-top: 2rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #888;
+  box-sizing: border-box;
+}
+#content .seperaterH {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #eee;
+}
+#content .hotGame {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  border-bottom: 0.04rem solid #eee;
+  color: #888;
+  text-indent: 1em;
+}
+#content .gameCon {
+  width: 100%;
+  height: 2.8rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+#content .gameCon .item1 {
+  float: left;
+  width: 50%;
+  height: 2rem;
+  background: url(../img/cow.png) no-repeat;
+  background-size: 2rem 2rem;
+  background-position: 0.8rem center;
+  padding-left: 3.6rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  border-right: 0.04rem solid #eee;
+  box-sizing: border-box;
+}
+#content .gameCon .item2 {
+  float: left;
+  width: 50%;
+  height: 2rem;
+  background: url(../img/cow.png) no-repeat;
+  background-size: 2rem 2rem;
+  background-position: 0.8rem center;
+  padding-left: 3.6rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  border-right: 0.04rem solid #eee;
+  box-sizing: border-box;
+}
+#content .lotteryCon {
+  width: 100%;
+}
+#content .lotteryCon ul {
+  width: 100%;
+  overflow: hidden;
+}
+#content .lotteryCon ul li {
+  float: left;
+  height: 3rem;
+  width: 50%;
+  box-sizing: border-box;
+  border-bottom: 0.04rem solid #eee;
+  position: relative;
+}
+#content .lotteryCon ul li:nth-of-type(odd) {
+  border-right: 0.04rem solid #eee;
+}
+#content .lotteryCon ul li img {
+  width: 1.96rem;
+  height: 1.96rem;
+  position: absolute;
+  top: 0.52rem;
+  left: 0.4rem;
+}
+#content .lotteryCon ul li .name {
+  width: calc(100% - 3em);
+  height: 0.6rem;
+  font-size: 0.6rem;
+  position: absolute;
+  top: 0.72rem;
+  left: 2.8rem;
+}
+#content .lotteryCon ul li .time {
+  width: calc(100% - 3em);
+  height: 0.52rem;
+  font-size: 0.52rem;
+  position: absolute;
+  bottom: 0.72rem;
+  left: 2.8rem;
+  color: #888;
+}
+.prizeTitle {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.56rem;
+  font-size: 0.64rem;
+  border-bottom: 0.04rem solid #eee;
+  color: #888;
+  padding-left: 2rem;
+  background: url(../img/cup.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0.8rem 0.44rem;
+  box-sizing: border-box;
+}
+.prize {
+  width: 100%;
+}
+.prize ul {
+  width: 100%;
+}
+.prize ul li {
+  width: 100%;
+  height: 1.2rem;
+  position: relative;
+}
+.prize ul li:nth-of-type(even) {
+  background-color: #f8f8f8;
+}
+.prize ul li .identify {
+  width: 15%;
+  height: 1.2rem;
+  font-size: 0.48rem;
+  line-height: 1.2rem;
+  position: absolute;
+  left: 5%;
+  top: 0;
+  color: #333;
+}
+.prize ul li .ammount {
+  width: 37%;
+  height: 1.2rem;
+  font-size: 0.48rem;
+  line-height: 1.2rem;
+  position: absolute;
+  left: 21%;
+  color: #be1204;
+  text-align: center;
+}
+.prize ul li .lotteryType {
+  width: 36%;
+  height: 1.2rem;
+  font-size: 0.48rem;
+  line-height: 1.2rem;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  color: #333;
+  text-align: right;
+}

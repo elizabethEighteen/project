@@ -1,0 +1,201 @@
+@import "./reset.less";
+
+body {
+	margin-top: 44/@r;
+	background-color: rgb(245,245,245);
+}
+
+header {
+	width: 100%;
+	height: 44/@r;
+	background-color: #ec0022;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.back {
+		width: 26/@r;
+		height: 26/@r;
+		background: url(../img/back.png) no-repeat;
+		background-size: 26/@r 26/@r;
+		position: absolute;
+		top: 9/@r;
+		left: 10/@r;
+	}
+	.mainTitle {
+		height: 20/@r;
+		line-height: 20/@r;
+		font-size: 20/@r;
+		color: #fff;
+		position: absolute;
+		top: 12/@r;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.free {
+		height: 16/@r;
+		position: absolute;
+		line-height: 16/@r;
+		font-size: 16/@r;
+		color: #fff;
+		right: 2%;
+		top: 14/@r;
+	}
+}
+#content {
+	width: 100%;
+	padding-top: 10/@r;
+	.card {
+		width: 90%;
+		margin-left: 5%;
+		height: 126/@r;
+		background-color: #fff;
+		position: relative;
+		padding-left: 70/@r;
+		box-sizing: border-box;
+		padding-top: 15/@r;
+		img {
+			width: 42/@r;
+			height: 42/@r;
+			position: absolute;
+			top: 41/@r;
+			left: 10/@r;
+			background-color: green;
+		}
+		.bankName {
+			width: 50%;
+			line-height: 1.2em;
+			font-size: 17/@r;
+		}
+		.peopleName {
+			width: 50%;
+			line-height: 1.2em;
+			font-size: 13/@r;
+			margin-top: 5/@r;
+			color: rgb(152,152,152);
+		}
+		.location {
+			width: 50%;
+			line-height: 1.2em;
+			font-size: 13/@r;
+			margin-top: 5/@r;
+			color: rgb(152,152,152);
+		}
+		.cardNumber {
+			width: 70%;
+			line-height: 1.2em;
+			font-size: 16/@r;
+			margin-top: 5/@r;
+			color: rgb(117,117,117);
+		}
+	}
+	.withDrawAmount {
+		width: 90%;
+		height: 195/@r;
+		background-color: #fff;
+		box-shadow: 0 0 10px 2px #cccc;
+		border-radius: 5/@r;
+		padding: .5rem 1rem;
+		box-sizing: border-box;
+		margin-top: 10/@r;
+		margin-left: 5%;
+		.title {
+			width: 100%;
+			height: 14/@r;
+			line-height: 14/@r;
+			font-size: 14/@r;
+			color: rgb(51,51,51);
+		}
+		.amount {
+			margin-top: 15/@r;
+			width: 100%;
+			height: 16/@r;
+			padding-bottom: 10/@r;
+			border-bottom: 1/@r solid #ccc;
+			input {
+				display: block;
+				width: 100%;
+				height: 16/@r;
+				line-height: 16/@r;
+				font-size: 16/@r;
+				color: #e62c2c;
+			}
+		}
+		.tip {
+			width: 100%;
+			height: 12/@r;
+			line-height: 12/@r;
+			font-size: 12/@r;
+			color: rgb(153,153,153);
+			margin-top: 10/@r;
+		}
+		.tipPassword {
+			width: 100%;
+			height: 14/@r;
+			line-height: 14/@r;
+			font-size: 14/@r;
+			color: rgb(51,51,51);
+			margin-top: 15/@r;
+		}
+		.amountPassword {
+			margin-top: 5/@r;
+			width: 163/@r;
+			height: 40/@r;
+			position: relative;
+			border: 1/@r solid #ccc;
+			.item {
+				position: absolute;
+				width: 40/@r;
+				height: 40/@r;
+				box-sizing: border-box;
+				border-right: 1/@r solid #ccc;
+				top: 0;
+				&:nth-of-type(1) {
+					left: 0;
+				}
+				&:nth-of-type(2) {
+					left: 41/@r;
+				}
+				&:nth-of-type(3) {
+					left: 82/@r;
+				}
+				&:nth-of-type(4) {
+					left: 123/@r;
+					border-right: none;
+				}
+			}
+			.input {
+				width: 160/@r;
+				height: 40/@r;
+				position: absolute;
+				top: 0;
+				left: 18/@r;
+				overflow: hidden;
+				#special {
+					display: block;
+					width: 160/@r;
+					height: 40/@r;
+					line-height: 40/@r;
+					font-size: 16/@r;
+					letter-spacing: 33/@r;
+					background: transparent;
+					text-align: left;
+				}
+			}
+		}
+	}
+	.totalBtn {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 20/@r;
+		height: 40/@r;
+		border-radius: 4/@r;
+		background-color: rgb(221,221,221);
+		color: #fff;
+		line-height: 40/@r;
+		font-size: 18/@r;
+		text-align: center;
+		&.active {
+			background-color: rgb(239,79,79);
+		}
+	}
+}

@@ -1,0 +1,247 @@
+@import "./reset.less";
+
+body {
+	margin-top: 44/@r;
+}
+
+header {
+	z-index: 100;
+	width: 100%;
+	height: 44/@r;
+	background-color: #ec0022;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.back {
+		width: 26/@r;
+		height: 26/@r;
+		background: url(../img/back.png) no-repeat;
+		background-size: 26/@r 26/@r;
+		position: absolute;
+		top: 9/@r;
+		left: 10/@r;
+	}
+	.mainTitle {
+		height: 20/@r;
+		line-height: 20/@r;
+		font-size: 20/@r;
+		color: #fff;
+		position: absolute;
+		top: 12/@r;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+#nav {
+		width: 100%;
+		height: 40/@r;
+		border-bottom: 8/@r solid #eee;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		div {
+			width: 33.3%;
+			height: 38/@r;
+			line-height: 38/@r;
+			font-size: 16/@r;
+			color: rgb(174,174,174);
+			text-align: center;
+			border-bottom: 2/@r solid #fff;
+			&.active {
+				color: rgb(236,0,34);
+				border-bottom: 2/@r solid rgb(236,0,34);
+			}
+		}
+	}
+#content {
+	width: 100%;
+	.one {
+		display: block;
+		width: 100%;
+		.sepratorH {
+				width: 100%;
+				height: 6/@r;
+				background-color: #eee;
+			}
+		.type1 {
+			width: 90%;
+			margin-left: 5%;
+			height: 50/@r;
+			border-bottom: 1/@r solid #ccc;
+			position: relative;
+			.lScript {
+				width: 30%;
+				height: 50/@r;
+				line-height: 50/@r;
+				font-size: 15/@r;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.rScript {
+				width: 50%;
+				height: 50/@r;
+				line-height: 50/@r;
+				font-size: 14/@r;
+				position: absolute;
+				top: 0;
+				right: 0;
+				text-align: right;
+			}
+			&:nth-of-type(2) {
+				border-bottom: none;
+			}
+		}
+		.type2 {
+			width: 90%;
+			margin-left: 5%;
+			border-bottom: 1/@r solid #ccc;
+			height: 86/@r;
+			position: relative;
+			.p1 {
+				width: 30%;
+				height: 42/@r;
+				line-height: 42/@r;
+				font-size: 15/@r;
+				color: rgb(102,102,102);
+				position: absolute;
+				top: 1/@r;
+				left: 0;
+			}
+			.p2 {
+				width: 50%;
+				height: 42/@r;
+				line-height: 42/@r;
+				font-size: 12/@r;
+				text-align: right;
+				position: absolute;
+				top: 1/@r;
+				right: 0;
+			}
+			input {
+				width: 100%;
+				height: 42/@r;
+				line-height: 42/@r;
+				font-size: 30/@r;
+				color: rgb(198,198,198);
+				position: absolute;
+				bottom: 1/@r;
+				left: 0;
+			}
+		}
+		.type3 {
+			width: 90%;
+			margin-left: 5%;
+			height: 50/@r;
+			.btn {
+				width: 100%;
+				height: 40/@r;
+				margin-top: 10/@r;
+				line-height: 40/@r;
+				font-size: 17/@r;
+				text-align: center;
+				color: #fff;
+				background-color: rgb(237,166,166);
+				&.active {
+					background-color: red;
+				}
+			}
+		}
+		.type4 {
+			width: 90%;
+			margin-left: 5%;
+			height: 65/@r;
+			border-bottom: 1/@r solid #eee;
+			position: relative;
+			.p1 {
+				width: 30%;
+				height: 65/@r;
+				line-height: 65/@r;
+				font-size: 13/@r;
+				color: rgb(108,108,108);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.p2 {
+				width: 50%;
+				height: 65/@r;
+				line-height: 65/@r;
+				font-size: 17/@r;
+				color: rgb(187,39,26);
+				position: absolute;
+				right: 0;
+				top: 0;
+				text-align: right;
+			}
+		}
+		.totalBtn {
+			width: 90%;
+			margin-left: 5%;
+			height: 42/@r;
+			line-height: 42/@r;
+			font-size: 16/@r;
+			text-align: center;
+			box-sizing: border-box;
+			border: 1.5/@r solid rgb(187,39,26);
+			border-radius: 1%;
+			color: rgb(187,39,26);
+			margin-top: 35/@r;
+		}
+	}
+	.two {
+		display: none;
+		width: 100%;
+		height: calc(100vh - 3.68rem);
+		background-color: rgb(245,245,249);
+		ul {
+			width: 100%;
+			li {
+				width: 90%;
+				padding: 0 5%;
+				height: 58/@r;
+				border-bottom: 1/@r solid #ccc;
+				position: relative;
+				background-color: #fff;
+				&:last-child {
+					border-bottom: none;
+				}
+				.p1 {
+					width: 45%;
+					height: 14/@r;
+					color: rgb(3,3,3);
+					line-height: 14/@r;
+					font-size: 14/@r;
+					position: absolute;
+					top: 10/@r;
+					left: 5%;
+				}
+				.date {
+					width: 45%;
+					height: 10/@r;
+					font-size: 10/@r;
+					line-height: 10/@r;
+					color: rgb(150,150,150);
+					position: absolute;
+					left: 5%;
+					bottom: 10/@r;
+				}
+				.ammount {
+					width: 45%;
+					height: 58/@r;
+					line-height: 58/@r;
+					font-size: 12/@r;
+					color: rgb(255,59,50);
+					position: absolute;
+					top: 0;
+					right: 5%;
+					text-align: right;
+				}
+			}
+		}
+	}
+	.three {
+		display: none;
+		width: 100%;
+	}
+}

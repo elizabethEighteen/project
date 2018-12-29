@@ -1,0 +1,291 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.92rem;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+}
+footer .item {
+  width: 20%;
+  height: 1.92rem;
+  height: 100px;
+  color: #888;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+footer .item.active {
+  color: red;
+}
+footer .index {
+  background: url(../img/index.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .index.active {
+  background: url(../img/indexA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .purchaseLottery {
+  background: url(../img/purchase.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .purchaseLottery.active {
+  background: url(../img/purchaseA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .trend {
+  background: url(../img/trend.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .trend.active {
+  background: url(../img/trendA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .mine {
+  background: url(../img/mine.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .mine.active {
+  background: url(../img/mineA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+body {
+  margin-top: 3.2rem;
+  margin-bottom: 1.92rem;
+}
+header {
+  width: 100%;
+  height: 3.2rem;
+  background-color: #ec0022;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+header .top {
+  width: 100%;
+  height: 1.76rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .top .mainTitle {
+  width: 4rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.88rem;
+  position: absolute;
+  top: 0.44rem;
+  left: 5.48rem;
+  text-align: center;
+  color: #fff;
+}
+header .top .allType {
+  width: 2.56rem;
+  height: 1.76rem;
+  position: absolute;
+  top: 0;
+  right: 0.4rem;
+  text-align: right;
+  line-height: 1.76rem;
+  font-size: 0.64rem;
+  color: #fff;
+}
+header .bottom {
+  width: 100%;
+  height: 1.4rem;
+  position: absolute;
+  top: 1.76rem;
+  left: 0;
+  border-top: 0.04rem solid #fa1c3e;
+}
+header .bottom .leftBtn {
+  width: 25%;
+  height: 1.4rem;
+  position: absolute;
+  box-shadow: 0.04rem 0 0.12rem rgba(0, 0, 0, 0.16);
+  border-top: 0.04rem solid #fa1c3e;
+  left: 0;
+  top: -0.04rem;
+}
+header .bottom .leftBtn a {
+  display: block;
+  width: 2.4rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  border-radius: 0.32rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.52rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header .bottom .leftBtn a.active {
+  background-color: #a50018;
+}
+header .bottom .rightSlider {
+  width: 75%;
+  height: 1.4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+header .bottom .rightSlider ul {
+  width: 40rem;
+  height: 1.4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+header .bottom .rightSlider ul li {
+  float: left;
+  margin-left: 0.8rem;
+  height: 1.4rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+header .bottom .rightSlider ul li div {
+  height: 0.64rem;
+  line-height: 0.64rem;
+  border-radius: 0.32rem;
+  font-size: 0.52rem;
+  color: #fff;
+  padding: 0 0.08rem;
+  box-sizing: border-box;
+}
+header .bottom .rightSlider ul li div.active {
+  background-color: #a50018;
+}
+#content {
+  width: 100%;
+}
+#content ul {
+  width: 100%;
+}
+#content ul li {
+  float: left;
+  width: 50%;
+  height: 3.84rem;
+  padding: 0.3rem 0.4rem;
+  box-sizing: border-box;
+}
+#content ul li .shadow {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.32rem;
+  box-shadow: 0 0.08rem 0.36rem 0.04rem #ccc;
+  position: relative;
+}
+#content ul li .shadow img {
+  width: 2.12rem;
+  height: 2.12rem;
+  position: absolute;
+  top: 0.56rem;
+  left: 0.2rem;
+}
+#content ul li .shadow .name {
+  width: calc(100% - 2.6rem);
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.5rem;
+  color: #333;
+  position: absolute;
+  left: 2.52rem;
+  top: 0.48rem;
+}
+#content ul li .shadow .howTime {
+  width: calc(100% - 2.6rem);
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.46rem;
+  color: #999;
+  position: absolute;
+  left: 2.52rem;
+  top: 1.3rem;
+}
+#content ul li .shadow .deadTime {
+  width: calc(100% - 2.6rem);
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.46rem;
+  color: red;
+  position: absolute;
+  left: 2.52rem;
+  top: 2.1rem;
+}

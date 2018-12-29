@@ -1,0 +1,320 @@
+@import "./reset.less";
+
+body {
+	margin-top: 44/@r;
+	margin-bottom: 48/@r;
+}
+header {
+	width: 100%;
+	height: 44/@r;
+	background-color: #ec0022;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	.login {
+		width: 50/@r;
+		height: 30/@r;
+		line-height: 30/@r;
+		font-size: 17/@r;
+		color: #fff;
+		text-align: center;
+		position: absolute;
+		top: 7/@r;
+		left: 5/@r;
+	}
+	.register {
+		width: 50/@r;
+		height: 30/@r;
+		line-height: 30/@r;
+		font-size: 17/@r;
+		color: #fff;
+		text-align: center;
+		position: absolute;
+		top: 7/@r;
+		right: 5/@r;
+	}
+	img {
+		width: 92/@r;
+		height: 36/@r;
+		position: absolute;
+		top: 4/@r;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48/@r;
+	background-color: #eee;
+	display: flex;
+	justify-content: space-around;
+	.item {
+		display: block;
+		width: 20%;
+		height: 48/@r;
+		color: #888;
+		font-size: 16/@r;
+		line-height: 16/@r;
+		text-align: center;
+		padding-top: 28/@r;
+		box-sizing: border-box;
+		&.active {
+			color: red;
+		}
+	}
+	.index {
+		background: url(../img/indexA.png) no-repeat;
+		background-size: 20/@r 20/@r;
+		background-position: center 5/@r;
+	}
+	.purchaseLottery {
+		background: url(../img/purchase.png) no-repeat;
+		background-size: 20/@r 20/@r;
+		background-position: center 5/@r;
+	}
+	.trend {
+		background: url(../img/trend.png) no-repeat;
+		background-size: 20/@r 20/@r;
+		background-position: center 5/@r;
+	}
+	.mine {
+		background: url(../img/mine.png) no-repeat;
+		background-size: 20/@r 20/@r;
+		background-position: center 5/@r;
+	}
+}
+#content {
+	width: 100%;
+	.banner {
+		width: 100%;
+		height: 110/@r;
+		position: relative;
+		ul {
+			width: 100%;
+			height: 110/@r;
+			li {
+				width: 100%;
+				height: 110/@r;
+				position: absolute;
+				top: 0;
+				left: 0;
+				img {
+					width: 100%;
+					height: 110/@r;
+				}
+			}
+		}
+	}
+	.slider {
+		width: 100%;
+		height: 32/@r;
+		border-bottom: 1/@r solid #eee;
+		position: relative;
+		.ad {
+			width: 40/@r;
+			height: 32/@r;
+			text-align: center;
+			line-height: 32/@r;
+			font-size: 14/@r;
+			color: red;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.rightArrow {
+			width: 40/@r;
+			height: 32/@r;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.midWrap {
+			width: calc(100% - 3.2rem);
+			height: 32/@r;
+			position: absolute;
+			top: 0;
+			left: 40/@r;
+			// background-color: red;
+			overflow: hidden;
+			.scriptCon {
+				width: 60rem;
+				height: 32/@r;
+				line-height: 32/@r;
+				font-size: 14/@r;
+				position: absolute;
+				top: 0;
+				left: 0/@r;
+				// background-color: green;
+			}
+		}
+	}
+	.conNav {
+		width: 100%;
+		height: 79/@r;
+		display: flex;
+		justify-content: space-around;
+		.item {
+			width: 20%;
+			height: 100%;
+			padding-top: 50/@r;
+			line-height: 14/@r;
+			font-size: 14/@r;
+			text-align: center;
+			color: #888;
+			box-sizing: border-box;
+		}
+	}
+	.seperaterH {
+		width: 100%;
+		height: 10/@r;
+		background-color: #eee;
+	}
+	.hotGame {
+		width: 100%;
+		height: 40/@r;
+		line-height: 40/@r;
+		font-size: 16/@r;
+		border-bottom: 1/@r solid #eee;
+		color: #888;
+		text-indent: 1em;
+	}
+	.gameCon {
+		width: 100%;
+		height: 70/@r;
+		padding-top: 10/@r;
+		box-sizing: border-box;
+		.item1 {
+			float: left;
+			width: 50%;
+			height: 50/@r;
+			background: url(../img/cow.png) no-repeat;
+			background-size: 50/@r 50/@r;
+			background-position: 20/@r center;
+			padding-left: 90/@r;
+			line-height: 50/@r;
+			font-size: 15/@r;
+			border-right: 1/@r solid #eee;
+			box-sizing: border-box;
+		}
+		.item2 {
+			float: left;
+			width: 50%;
+			height: 50/@r;
+			background: url(../img/cow.png) no-repeat;
+			background-size: 50/@r 50/@r;
+			background-position: 20/@r center;
+			padding-left: 90/@r;
+			line-height: 50/@r;
+			font-size: 15/@r;
+			border-right: 1/@r solid #eee;
+			box-sizing: border-box;
+		}
+	}
+	.lotteryCon {
+		width: 100%;
+		ul {
+			width: 100%;
+			overflow: hidden;
+			li {
+				width: 50%;
+				float: left;
+				height: 75/@r;
+				width: 50%;
+				box-sizing: border-box;
+				border-bottom: 1/@r solid #eee;
+				position: relative;
+				&:nth-of-type(odd) {
+					border-right: 1/@r solid #eee;
+				}
+				img {
+					width: 49/@r;
+					height: 49/@r;
+					position: absolute;
+					top: 13/@r;
+					left: 10/@r;
+				}
+				.name {
+					width: calc(100% - 3em);
+					height: 15/@r;
+					font-size: 15/@r;
+					position: absolute;
+					top: 18/@r;
+					left: 2.8rem;
+				}
+				.time {
+					width: calc(100% - 3em);
+					height: 13/@r;
+					font-size: 13/@r;
+					position: absolute;
+					bottom: 18/@r;
+					left: 2.8rem;
+					color: #888;
+				}
+			}
+		}
+	}
+}
+.prizeTitle {
+	width: 100%;
+	height: 40/@r;
+	line-height: 39/@r;
+	font-size: 16/@r;
+	border-bottom: 1/@r solid #eee;
+	color: #888;
+	padding-left: 50/@r;
+	background: url(../img/cup.png) no-repeat;
+	background-size: 20/@r 20/@r;
+	background-position: 20/@r 11/@r;
+	box-sizing: border-box;
+}
+.prize {
+	width: 100%;
+	ul {
+		width: 100%;
+		li {
+			width: 100%;
+			height: 30/@r;
+			position: relative;
+			&:nth-of-type(even) {
+				background-color: rgb(248,248,248);
+			}
+			.identify {
+				width: 15%;
+				height: 30/@r;
+				font-size: 12/@r;
+				line-height: 30/@r;
+				position: absolute;
+				left: 5%;
+				top: 0;
+				color: #333;
+			}
+			.ammount {
+				width: 37%;
+				height: 30/@r;
+				font-size: 12/@r;
+				line-height: 30/@r;
+				position: absolute;
+				left: 21%;
+				color: rgb(190,18,4);
+				text-align: center;
+			}
+			.lotteryType {
+				width: 36%;
+				height: 30/@r;
+				font-size: 12/@r;
+				line-height: 30/@r;
+				position: absolute;
+				right: 5%;
+				top: 0;
+				color: #333;
+				text-align: right;
+			}
+		}
+	}
+}

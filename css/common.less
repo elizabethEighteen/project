@@ -1,0 +1,67 @@
+@import "./reset.less";
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48/@r;
+	background-color: #eee;
+	display: flex;
+	justify-content: space-around;
+	.item {
+		width: 20%;
+		height: 48/@r; 
+		height: 100px;
+		color: #888;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		padding-top: 28px;
+		box-sizing: border-box;
+		&.active {
+			color: red;
+		}
+	}
+	.index {
+		background: url(../img/index.png) no-repeat;
+		background-size: 20px 20px;
+		background-position: center 5px;
+		&.active {
+			background: url(../img/indexA.png) no-repeat;
+			background-size: 20px 20px;
+			background-position: center 5px;
+		}
+	}
+	.purchaseLottery {
+		background: url(../img/purchase.png) no-repeat;
+		background-size: 20px 20px;
+		background-position: center 5px;
+		&.active {
+			background: url(../img/purchaseA.png) no-repeat;
+			background-size: 20px 20px;
+			background-position: center 5px;
+		}
+	}
+	.trend {
+		background: url(../img/trend.png) no-repeat;
+		background-size: 20px 20px;
+		background-position: center 5px;
+		&.active {
+			background: url(../img/trendA.png) no-repeat;
+			background-size: 20px 20px;
+			background-position: center 5px;
+		}
+	}
+	.mine {
+		background: url(../img/mine.png) no-repeat;
+		background-size: 20px 20px;
+		background-position: center 5px;
+		&.active {
+			background: url(../img/mineA.png) no-repeat;
+			background-size: 20px 20px;
+			background-position: center 5px;
+		}
+	}
+}
