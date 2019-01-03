@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header>
-		<img src="../img/mb-logo.png" alt="">
+		<img src="../img/white_logo.png" alt="">
 		<div class="lotteryType">分分PK拾<span></span></div>
 		<div class="date">请选择日期<span></span></div>
 	</header>
@@ -226,8 +226,9 @@
 						<span>第十名</span>
 					</div>
 				</div>
-				<div class="tableWrap">
-					<table>						
+				<div id="wrap1" class="tableWrap">
+					<canvas id="c1"></canvas>
+					<table id="t1">						
 						<thead>
 							<tr>
 								<th>期号</th>
@@ -245,57 +246,162 @@
 						</thead>			
 						<tbody>
 							<tr>
-								<td>1226870</td>
-								<td>01</td>
-								<td>02</td>
-								<td>03</td>
-								<td>04</td>
-								<td>05</td>
-								<td>06</td>
-								<td>07</td>
-								<td>08</td>
-								<td>09</td>
-								<td>10</td>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td class="active"><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
 							</tr>
 							<tr>
-								<td>1226870</td>
-								<td>01</td>
-								<td>02</td>
-								<td>03</td>
-								<td>04</td>
-								<td>05</td>
-								<td>06</td>
-								<td>07</td>
-								<td>08</td>
-								<td>09</td>
-								<td>10</td>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td class="active"><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
 							</tr>
 							<tr>
-								<td>1226870</td>
-								<td>01</td>
-								<td>02</td>
-								<td>03</td>
-								<td>04</td>
-								<td>05</td>
-								<td>06</td>
-								<td>07</td>
-								<td>08</td>
-								<td>09</td>
-								<td>10</td>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td class="active"><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
 							</tr>
 							<tr>
-								<td>1226870</td>
-								<td>01</td>
-								<td>02</td>
-								<td>03</td>
-								<td>04</td>
-								<td>05</td>
-								<td>06</td>
-								<td>07</td>
-								<td>08</td>
-								<td>09</td>
-								<td>10</td>
+								<th><div>1226870</div></th>
+								<td class="active"><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
 							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td class="active"><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td class="active"><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td class="active"><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td class="active"><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td class="active"><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td class="active"><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td class="active"><div>10</div></td>
+							</tr>
+							<tr>
+								<th><div>1226870</div></th>
+								<td class="active"><div>01</div></td>
+								<td><div>02</div></td>
+								<td><div>03</div></td>
+								<td><div>04</div></td>
+								<td><div>05</div></td>
+								<td><div>06</div></td>
+								<td><div>07</div></td>
+								<td><div>08</div></td>
+								<td><div>09</div></td>
+								<td><div>10</div></td>
+							</tr>
+							
 						</tbody>
 					</table>
 				</div>

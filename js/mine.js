@@ -31,27 +31,27 @@ $(function(){
 		var $btns = $('#content li');
 		$btns.on('click',function(){
 			if ($(this).index() == 0) {
-				window.location.href = '../html/cathecticRecord.html';
+				window.location.href = '../html/personalForm.html';
 			}else if ($(this).index() == 1) {
-				window.location.href = '../html/accountRecord.html';
+				window.location.href = '../html/cathecticRecord.html';
 			}else if ($(this).index() == 2) {
-				window.location.href = '../html/rechargeRecord.html';
+				window.location.href = '../html/proxy.html';
 			}else if ($(this).index() == 3) {
-				window.location.href = '../html/withDrawRecord.html';
+				window.location.href = '../html/message.html';
 			}
 			else if ($(this).index() == 4) {
-				window.location.href = '../html/personalForm.html';
+				window.location.href = '../html/creditLoad.html';
 			}else if ($(this).index() == 5) {
-				window.location.href = '../html/message.html';
+				window.location.href = '../html/withDrawRecord.html';
 			}
 			else if ($(this).index() == 6) {
 				window.location.href = '../html/limitTransform.html';
 			}
 			else if ($(this).index() == 7) {
-				window.location.href = '../html/onlineServe.html';
+				window.location.href = '../html/personalInfo.html';
 			}
 			else if ($(this).index() == 8) {
-				window.location.href = '../html/personalInfo.html';
+				window.location.href = '../html/onlineServe.html';
 			}
 		})
 	})();

@@ -80,7 +80,7 @@ footer .item {
   box-sizing: border-box;
 }
 footer .item.active {
-  color: red;
+  color: #0099df;
 }
 footer .index {
   background: url(../img/index.png) no-repeat;
@@ -129,7 +129,7 @@ body {
 header {
   width: 100%;
   height: 3.2rem;
-  background-color: #ec0022;
+  background-color: #0099df;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -170,14 +170,14 @@ header .bottom {
   position: absolute;
   top: 1.76rem;
   left: 0;
-  border-top: 0.04rem solid #fa1c3e;
+  border-top: 0.04rem solid #1c14c8;
 }
 header .bottom .leftBtn {
   width: 25%;
   height: 1.4rem;
   position: absolute;
   box-shadow: 0.04rem 0 0.12rem rgba(0, 0, 0, 0.16);
-  border-top: 0.04rem solid #fa1c3e;
+  border-top: 0.04rem solid #1c14c8;
   left: 0;
   top: -0.04rem;
 }
@@ -246,6 +246,7 @@ header .bottom .rightSlider ul li div.active {
   box-sizing: border-box;
 }
 #content ul li .shadow {
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 0.32rem;

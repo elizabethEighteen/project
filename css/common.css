@@ -59,6 +59,7 @@ p {
 }
 /*变量*/
 footer {
+  z-index: 110;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -80,7 +81,7 @@ footer .item {
   box-sizing: border-box;
 }
 footer .item.active {
-  color: red;
+  color: #0099df;
 }
 footer .index {
   background: url(../img/index.png) no-repeat;

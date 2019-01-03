@@ -65,7 +65,7 @@ body {
 header {
   width: 100%;
   height: 1.76rem;
-  background-color: #ec0022;
+  background-color: #0099df;
   position: fixed;
   top: 0;
   left: 0;
@@ -94,10 +94,10 @@ header .register {
   right: 0.2rem;
 }
 header img {
-  width: 3.68rem;
-  height: 1.44rem;
+  width: 4rem;
+  height: 1.2rem;
   position: absolute;
-  top: 0.16rem;
+  top: 0.28rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -123,7 +123,7 @@ footer .item {
   box-sizing: border-box;
 }
 footer .item.active {
-  color: red;
+  color: #0099df;
 }
 footer .index {
   background: url(../img/indexA.png) no-repeat;
@@ -152,20 +152,23 @@ footer .mine {
   width: 100%;
   height: 4.4rem;
   position: relative;
+  overflow: hidden;
 }
 #content .banner ul {
-  width: 100%;
-  height: 4.4rem;
-}
-#content .banner ul li {
-  width: 100%;
+  width: 15rem;
   height: 4.4rem;
   position: absolute;
   top: 0;
   left: 0;
 }
+#content .banner ul li {
+  width: 15rem;
+  height: 4.4rem;
+  float: left;
+}
 #content .banner ul li img {
-  width: 100%;
+  display: block;
+  width: 15rem;
   height: 4.4rem;
 }
 #content .slider {
@@ -201,7 +204,7 @@ footer .mine {
   overflow: hidden;
 }
 #content .slider .midWrap .scriptCon {
-  width: 60rem;
+  width: 40rem;
   height: 1.28rem;
   line-height: 1.28rem;
   font-size: 0.56rem;
@@ -224,6 +227,26 @@ footer .mine {
   text-align: center;
   color: #888;
   box-sizing: border-box;
+}
+#content .conNav .item:nth-of-type(1) {
+  background: url(../img/index_foura.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: center 0.28rem;
+}
+#content .conNav .item:nth-of-type(2) {
+  background: url(../img/index_fourb.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: center 0.28rem;
+}
+#content .conNav .item:nth-of-type(3) {
+  background: url(../img/index_fourc.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: center 0.28rem;
+}
+#content .conNav .item:nth-of-type(4) {
+  background: url(../img/index_fourd.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: center 0.28rem;
 }
 #content .seperaterH {
   width: 100%;
@@ -249,7 +272,7 @@ footer .mine {
   float: left;
   width: 50%;
   height: 2rem;
-  background: url(../img/cow.png) no-repeat;
+  background: url(../img/cow.jpg) no-repeat;
   background-size: 2rem 2rem;
   background-position: 0.8rem center;
   padding-left: 3.6rem;
@@ -262,7 +285,7 @@ footer .mine {
   float: left;
   width: 50%;
   height: 2rem;
-  background: url(../img/cow.png) no-repeat;
+  background: url(../img/ag.jpg) no-repeat;
   background-size: 2rem 2rem;
   background-position: 0.8rem center;
   padding-left: 3.6rem;
@@ -328,9 +351,15 @@ footer .mine {
 }
 .prize {
   width: 100%;
+  height: 7.2rem;
+  overflow: hidden;
+  position: relative;
 }
 .prize ul {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .prize ul li {
   width: 100%;

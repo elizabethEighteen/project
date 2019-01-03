@@ -7,15 +7,15 @@ body {
 header {
 	width: 100%;
 	height: 44/@r;
-	background-color: #ec0022;
+	background-color: #0099df;
 	position: fixed;
 	top: 0;
 	left: 0;
 	img {
-		width: 92/@r;
-		height: 36/@r;
+		width: 100/@r;
+		height: 30/@r;
 		position: absolute;
-		top: 4/@r;
+		top: 7/@r;
 		left: 5/@r;
 	}
 	.lotteryType {
@@ -309,7 +309,7 @@ header {
 			}
 		}
 		.five {
-			display: block;
+			display: none;
 			.kindsWrap {
 				width: 100%;
 				height: 40/@r;
@@ -340,6 +340,16 @@ header {
 			.tableWrap {
 				width: 100%;
 				overflow: hidden;
+				position: relative;
+				canvas {
+					z-index: 100;
+					background: transparent;
+					position: absolute;
+					width: 80%;
+					height: calc(100% - 1.36rem);
+					top: 1.36rem;
+					left: 20%;
+				}
 				table {
 					width: 100%;
 					border-collapse: collapse;
@@ -347,13 +357,45 @@ header {
 						tr {
 							width: 100%;
 							text-align: center;
+							th {
+								width: 20%;
+								background-color: rgb(232,228,222);
+								height: 32/@r;
+								border: 1/@r solid #ede9e5;
+								// text-align: center;
+								font-size: 13/@r;
+								font-weight: normal;
+							}
+							&:nth-of-type(odd) {
+								th {
+									background-color: #eee;
+								}
+							}
 							td {
 								height: 32/@r;
-								font-size: 13/@r;
 								border: 1/@r solid #ede9e5;
-								&:nth-of-type(1) {
-									width: 20%;
-									background-color: rgb(232,228,222);
+								text-align: center;
+								position: relative;
+								div {
+									width: 100%;
+									height: 100%;
+									font-size: 13/@r;
+									line-height: 20/@r;
+									width: 20/@r;
+									height: 20/@r;
+									border-radius: 100%;
+									text-align: center;
+									position: absolute;
+									left: 50%;
+									top: 50%;
+									transform: translate(-50%,-50%);
+								}
+								&.active {
+									div {		
+										color: #fff;
+										background-color: #ec0022;
+										z-index: 101;
+									}
 								}
 							}
 							&:nth-of-type(odd) {

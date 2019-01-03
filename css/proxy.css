@@ -1,0 +1,159 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+header {
+  width: 100%;
+  height: 6.8rem;
+  position: relative;
+  border-bottom: 0.16rem solid #eee;
+  background: url(../img/bigLogo.jpg) no-repeat;
+  background-size: 100% 6.8rem;
+}
+header .back {
+  width: 1.04rem;
+  height: 1.04rem;
+  background: url(../img/back.png) no-repeat;
+  background-size: 1.04rem 1.04rem;
+  position: absolute;
+  top: 0.36rem;
+  left: 0.4rem;
+}
+header .title {
+  width: 50%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0.4rem;
+  left: 25%;
+}
+header img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1.6rem;
+  background-color: green;
+  position: absolute;
+  left: 0.8rem;
+  bottom: 1.6rem;
+}
+header .id {
+  width: 60%;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.96rem;
+  color: #fff;
+  position: absolute;
+  top: 3rem;
+  left: 5.2rem;
+}
+header .ammount {
+  width: 60%;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.64rem;
+  color: #fff;
+  position: absolute;
+  top: 4.2rem;
+  left: 5.2rem;
+}
+#content {
+  width: 100%;
+}
+#content .nav {
+  width: 100%;
+  height: 3.28rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.04rem solid #ccc;
+}
+#content .nav a {
+  width: 33%;
+  height: 3.28rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  line-height: 1.28rem;
+  font-size: 0.52rem;
+  color: #666;
+  text-align: center;
+}
+#content ul {
+  width: 90%;
+  margin-left: 5%;
+}
+#content ul li {
+  width: 100%;
+  height: 1.8rem;
+  border-bottom: 0.04rem solid #ccc;
+  line-height: 1.76rem;
+  padding-left: 1.6rem;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  color: #212121;
+}
+#content ul li span {
+  float: right;
+  width: 0.48rem;
+  height: 0.48rem;
+  background-color: green;
+  margin-top: 0.64rem;
+}

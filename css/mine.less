@@ -13,7 +13,8 @@ header {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: pink;
+		background: url(../img/bigLogo.jpg) no-repeat;
+		background-size: 100% 142/@r;
 		.title {
 			width: 100%;
 			text-align: center;
@@ -70,8 +71,10 @@ header {
 			position: absolute;
 			left: 40/@r;
 			top: 12/@r;
-			// background-color: red;
 			font-size: 16/@r;
+			background: url(../img/m_recharge.png) no-repeat;
+			background-size: 20/@r 20/@r;
+			background-position: 0 center;
 		}
 		.withDraw {
 			width: 82/@r;
@@ -84,6 +87,9 @@ header {
 			right: 40/@r;
 			top: 12/@r;
 			font-size: 16/@r;
+			background: url(../img/m_withDraw.png) no-repeat;
+			background-size: 20/@r 20/@r;
+			background-position: 0 center;
 		}
 
 	}
@@ -109,6 +115,14 @@ header {
 				position: relative;
 				&:nth-of-type(3n) {
 					border-right: none;
+				}
+				img {
+					width: 25/@r;
+					height: 25/@r;
+					position: absolute;
+					top: 25/@r;
+					left: 50%;
+					transform: translateX(-50%);
 				}
 				div {
 					width: 100%;
