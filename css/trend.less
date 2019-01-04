@@ -31,10 +31,10 @@ header {
 		span {
 			float: right;
 			width: 16/@r;
-			height: 16/@r;
-			margin-top: 2/@r;
+			height: 8/@r;
+			margin-top: 6/@r;
 			background: url(../img/downArrow.png) no-repeat;
-			background-size: 16/@r 16/@r;
+			background-size: 16/@r 8/@r;
 		}
 	}
 	.date {
@@ -48,10 +48,10 @@ header {
 		span {
 			float: right;
 			width: 16/@r;
-			height: 16/@r;
-			margin-top: 0/@r;
+			height: 8/@r;
+			margin-top: 6/@r;
 			background: url(../img/downArrow.png) no-repeat;
-			background-size: 16/@r 16/@r;
+			background-size: 16/@r 8/@r;
 		}
 	}
 }
@@ -426,5 +426,127 @@ header {
 				}
 			}
 		}
+	}
+}
+#mask {
+	display: none;
+	z-index: 103;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.6);
+}
+#dateDialog {
+	display: none;
+	z-index: 104;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 300/@r;
+	background-color: #fff;
+	.topBtns {
+		width: 100%;
+		height: 40/@r;
+		border-bottom: 1/@r solid #eee;
+		.cancel {
+			width: 50%;
+			height: 40/@r;
+			line-height: 40/@r;
+			font-size: 16/@r;
+			color: #26a2ff;
+			text-align: center;
+			float: left;
+		}
+		.sure {
+			width: 50%;
+			height: 40/@r;
+			line-height: 40/@r;
+			font-size: 16/@r;
+			color: #26a2ff;
+			text-align: center;
+			float: left;
+		}
+	}
+	.bot {
+		width: 100%;
+		height: 259/@r;
+		.year {
+			z-index: 105;
+			float: left;
+			width: 33%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			ul {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				li {
+					width: 100%;
+					height: 36/@r;
+					line-height: 36/@r;
+					font-size: 18/@r;
+					color: #a6a6a7;
+					text-align: center;
+				}
+			}
+		}
+		.month {
+			z-index: 105;
+			float: left;
+			width: 33%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			ul {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				li {
+					width: 100%;
+					height: 36/@r;
+					line-height: 36/@r;
+					font-size: 18/@r;
+					color: #a6a6a7;
+					text-align: center;
+				}
+			}
+		}
+		.day {
+			z-index: 105;
+			float: left;
+			width: 33%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			ul {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				li {
+					width: 100%;
+					height: 36/@r;
+					line-height: 36/@r;
+					font-size: 18/@r;
+					color: #a6a6a7;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.mask {
+		width: 100%;
+		height: 36/@r;
+		position: absolute;
+		top: 77/@r;
+		left: 0;
+		background-color: rgba(0,0,0,.15);
+		z-index: 104; 
 	}
 }

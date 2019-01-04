@@ -5,7 +5,7 @@ body {
 	margin-bottom: 120/@r;
 }
 header {
-	z-index: 100;
+	z-index: 105;
 	width: 100%;
 	height: 44/@r;
 	background-color: #0099df;
@@ -13,13 +13,13 @@ header {
 	top: 0;
 	left: 0;
 	.back {
-		width: 26/@r;
-		height: 26/@r;
+		width: 30/@r;
+		height: 20/@r;
 		background: url(../img/back.png) no-repeat;
-		background-size: 26/@r 26/@r;
+		background-size: 11/@r 20/@r;
 		position: absolute;
-		top: 9/@r;
-		left: 10/@r;
+		top: 10/@r;
+		left: 10/@r;		
 	}
 	.mainTitle {
 		height: 16/@r;
@@ -36,10 +36,12 @@ header {
 		span {
 			float: right;
 			width: 16/@r;
-			height: 16/@r;
-			margin-top: 0/@r;
+			height: 8/@r;
+			margin-top: 4/@r;
 			background: url(../img/downArrow.png) no-repeat;
-			background-size: 16/@r 16/@r;
+			background-size: 16/@r 8/@r;
+			background-position: 8/@r 0;
+			padding: 0 5/@r;
 		}
 	}
 	.changeType {
@@ -53,10 +55,10 @@ header {
 		span {
 			float: right;
 			width: 16/@r;
-			height: 16/@r;
-			margin-top: 14/@r;
+			height: 8/@r;
+			margin-top: 18/@r;
 			background: url(../img/downArrow.png) no-repeat;
-			background-size: 16/@r 16/@r;
+			background-size: 16/@r 8/@r;
 		}
 	}
 }
@@ -381,5 +383,46 @@ footer {
 				}
 			}
 		}	
+	}
+}
+#mask {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+#lotteryTypeDialog {
+	display: none;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 44/@r;
+	left: 0;
+	z-index: 102;
+	ul {
+		width: 100%;
+		padding: 10/@r 10/@r 50/@r 10/@r;
+		box-sizing: border-box;
+		li {
+			float: left;
+			width: 31%;
+			height: 28/@r;
+			line-height: 28/@r;
+			font-size: 13/@r;
+			border: 1/@r solid #eee;
+			color: #999;
+			margin-left: 2.3%;
+			box-sizing: border-box;
+			text-align: center;
+			margin-bottom: 10/@r;
+			&.active {
+				color: #be1204;
+				border: 1/@r solid #be1204;
+			}
+		}
 	}
 }

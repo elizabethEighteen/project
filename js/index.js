@@ -76,4 +76,15 @@ $(function(){
       timmer = setInterval(move,30);
 
    })();
+   //登录注册
+   (function(){
+      var $login = $('header .login');
+      var $register = $('header .register');
+      $login.on('click',function(){
+        window.location.href = './html/login.html?loginType=index';
+      });
+      $register.on('click',function(){
+         window.location.href = './html/register.html?loginType=index';
+      })
+   })();
 });

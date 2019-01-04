@@ -71,12 +71,12 @@ header {
   left: 0;
 }
 header .back {
-  width: 1.04rem;
-  height: 1.04rem;
+  width: 1.2rem;
+  height: 0.8rem;
   background: url(../img/back.png) no-repeat;
-  background-size: 1.04rem 1.04rem;
+  background-size: 0.44rem 0.8rem;
   position: absolute;
-  top: 0.36rem;
+  top: 0.4rem;
   left: 0.4rem;
 }
 header .mainTitle {

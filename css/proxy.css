@@ -67,12 +67,12 @@ header {
   background-size: 100% 6.8rem;
 }
 header .back {
-  width: 1.04rem;
-  height: 1.04rem;
+  width: 1.2rem;
+  height: 0.8rem;
   background: url(../img/back.png) no-repeat;
-  background-size: 1.04rem 1.04rem;
+  background-size: 0.44rem 0.8rem;
   position: absolute;
-  top: 0.36rem;
+  top: 0.4rem;
   left: 0.4rem;
 }
 header .title {
@@ -136,6 +136,21 @@ header .ammount {
   color: #666;
   text-align: center;
 }
+#content .nav a:nth-of-type(1) {
+  background: url(../img/proxy_a.png) no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: center 0.4rem;
+}
+#content .nav a:nth-of-type(2) {
+  background: url(../img/proxy_b.png) no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: center 0.4rem;
+}
+#content .nav a:nth-of-type(3) {
+  background: url(../img/proxy_c.png) no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: center 0.4rem;
+}
 #content ul {
   width: 90%;
   margin-left: 5%;
@@ -150,10 +165,37 @@ header .ammount {
   font-size: 0.6rem;
   color: #212121;
 }
+#content ul li:nth-of-type(1) {
+  background: url(../img/proxy_1.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content ul li:nth-of-type(2) {
+  background: url(../img/proxy_2.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content ul li:nth-of-type(3) {
+  background: url(../img/proxy_3.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content ul li:nth-of-type(4) {
+  background: url(../img/proxy_4.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content ul li:nth-of-type(5) {
+  background: url(../img/proxy_5.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
 #content ul li span {
   float: right;
-  width: 0.48rem;
-  height: 0.48rem;
-  background-color: green;
-  margin-top: 0.64rem;
+  width: 0.44rem;
+  height: 0.8rem;
+  margin-top: 0.48rem;
+  margin-right: 0.2rem;
+  background: url(../img/next.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
 }

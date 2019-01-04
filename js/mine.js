@@ -4,11 +4,11 @@ $(function(){
 		var $login = $('header .login');
 		var $register = $('header .register');
 		$login.on('click',function(){
-			window.location.href = '../html/login.html';
+			window.location.href = '../html/login.html?loginType=mine';
 
 		});
-		$login.on('click',function(){
-			window.location.href = '../html/register.html';
+		$register.on('click',function(){
+			window.location.href = '../html/register.html?loginType=mine';
 		});
 
 	})();

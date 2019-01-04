@@ -10,13 +10,13 @@ header {
 	top: 0;
 	left: 0;
 	.back {
-		width: 26/@r;
-		height: 26/@r;
+		width: 30/@r;
+		height: 20/@r;
 		background: url(../img/back.png) no-repeat;
-		background-size: 26/@r 26/@r;
+		background-size: 11/@r 20/@r;
 		position: absolute;
-		top: 9/@r;
-		left: 10/@r;
+		top: 10/@r;
+		left: 10/@r;		
 	}
 	.mainTitle {
 		height: 20/@r;
@@ -94,6 +94,9 @@ header {
 			color: rgb(236,0,34);
 			transform: translate(-50%,-50%);
 			box-sizing: border-box;
+			background: url(../img/tip.png) no-repeat;
+			background-size: 30/@r 30/@r;
+			background-position: 0 center;
 		}
 	}
 }
@@ -117,8 +120,38 @@ header {
 			border-bottom: 1/@r solid #ccc;
 			line-height: 50/@r;
 			font-size: 15/@r;
-			padding-left: 50/@r;
+			padding-left: 55/@r;
 			box-sizing: border-box;
+			position: relative;
+			&:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
+				background: url(../img/wechat.png) no-repeat;
+				background-size: 35/@r 35/@r;
+				background-position: 10/@r center;
+			}
+			&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6) {
+				background: url(../img/pay.png) no-repeat;
+				background-size: 35/@r 35/@r;
+				background-position: 10/@r center;
+			}
+			&:nth-of-type(7) {
+				background: url(../img/card.png) no-repeat;
+				background-size: 35/@r 35/@r;
+				background-position: 10/@r center;
+			}
+			&:nth-of-type(8) {
+				background: url(../img/huabei.png) no-repeat;
+				background-size: 35/@r 35/@r;
+				background-position: 10/@r center;
+			}
+			span {
+				width: 11/@r;
+				height: 20/@r;
+				position: absolute;
+				background: url(../img/next.png) no-repeat;
+				background-size: 11/@r 20/@r;
+				top: 15/@r;
+				right: 15/@r;
+			}         
 		}
 	}
 }

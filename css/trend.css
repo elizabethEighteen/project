@@ -155,10 +155,10 @@ header .lotteryType {
 header .lotteryType span {
   float: right;
   width: 0.64rem;
-  height: 0.64rem;
-  margin-top: 0.08rem;
+  height: 0.32rem;
+  margin-top: 0.24rem;
   background: url(../img/downArrow.png) no-repeat;
-  background-size: 0.64rem 0.64rem;
+  background-size: 0.64rem 0.32rem;
 }
 header .date {
   height: 0.8rem;
@@ -172,10 +172,10 @@ header .date {
 header .date span {
   float: right;
   width: 0.64rem;
-  height: 0.64rem;
-  margin-top: 0rem;
+  height: 0.32rem;
+  margin-top: 0.24rem;
   background: url(../img/downArrow.png) no-repeat;
-  background-size: 0.64rem 0.64rem;
+  background-size: 0.64rem 0.32rem;
 }
 #content {
   width: 100%;
@@ -539,4 +539,126 @@ header .date span {
 #content .tabContent .five .tableWrap table thead tr th:nth-of-type(1) {
   background-color: #f8f5f2;
   color: #333;
+}
+#mask {
+  display: none;
+  z-index: 103;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#dateDialog {
+  display: none;
+  z-index: 104;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
+  background-color: #fff;
+}
+#dateDialog .topBtns {
+  width: 100%;
+  height: 1.6rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#dateDialog .topBtns .cancel {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .topBtns .sure {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .bot {
+  width: 100%;
+  height: 10.36rem;
+}
+#dateDialog .bot .year {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .year ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .year ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .month {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .month ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .month ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .day {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .day ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .day ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .mask {
+  width: 100%;
+  height: 1.44rem;
+  position: absolute;
+  top: 3.08rem;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 104;
 }

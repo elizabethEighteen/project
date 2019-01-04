@@ -71,12 +71,12 @@ header {
   z-index: 100;
 }
 header .back {
-  width: 1.04rem;
-  height: 1.04rem;
+  width: 1.2rem;
+  height: 0.8rem;
   background: url(../img/back.png) no-repeat;
-  background-size: 1.04rem 1.04rem;
+  background-size: 0.44rem 0.8rem;
   position: absolute;
-  top: 0.36rem;
+  top: 0.4rem;
   left: 0.4rem;
 }
 header .mainTitle {
@@ -95,9 +95,10 @@ header .mainTitle {
 #content .top {
   width: 100%;
   height: 7.28rem;
-  background-image: linear-gradient(#671f2d, #3e072e);
   border-bottom: 0.32rem solid #eee;
   position: relative;
+  background: url(../img/bigLogo.jpg) no-repeat;
+  background-size: 100% 7.28rem;
 }
 #content .top .title {
   width: 100%;
@@ -162,13 +163,12 @@ header .mainTitle {
 }
 #content .datePicker .type span {
   float: right;
-  width: 0.64rem;
-  height: 0.64rem;
-  margin-top: 0.32rem;
-  margin-right: 0.4rem;
+  width: 0.8rem;
+  height: 0.4rem;
+  margin-top: 0.52rem;
+  margin-right: 0.56rem;
   background: url(../img/downArrow.png) no-repeat;
-  background-size: 0.64rem 0.64rem;
-  background-color: green;
+  background-size: 0.8rem 0.4rem;
 }
 #content ul {
   width: 90%;

@@ -151,7 +151,9 @@ $(function(){
 				var touch = ev.targetTouches[0];
 				 x = parseInt(touch.pageY);
 				 nowtop = parseInt(el.css('top'));
-				
+				clearInterval($year[0].timer);
+				clearInterval($month[0].timer);
+				clearInterval($day[0].timer);
 				
 			});
 			el[0].addEventListener('touchmove',function(ev){
