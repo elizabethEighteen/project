@@ -1,6 +1,147 @@
 $(function(){
-
-	/*tab*/
+	//从全部彩种跳转过来
+	var $mainTitle = $('header .lotteryType');
+	var totalType = localStorage.getItem('trendType');
+	if (totalType) {
+		$mainTitle.html(totalType+'<span></span>')
+	}else {
+		$mainTitle.html('北京赛车<span></span>')
+	}
+	colorballs();
+	//基本走势
+	(function(){
+		var $kinds = $('#content .tabContent .five .kinds');
+		var $items = $kinds.find('span');
+		var startX = 0;
+		var startLeft = 0;
+		var nowX =0;
+		var dis = 0;
+		var temp = 0;
+		var wrapWidth = $(window).width();
+		// console.log(wrapWidth);
+		var kindsWidth = $kinds.width();
+		$items.on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		$kinds[0].addEventListener('touchstart',function(ev) {
+			var touch = ev.targetTouches[0];
+			startLeft = parseInt($kinds.css('left'));
+			startX = parseInt(touch.pageX);
+		});
+		$kinds[0].addEventListener('touchmove',function(ev) {
+			var touch = ev.targetTouches[0];
+			nowX = parseInt(touch.pageX);
+			dis = nowX - startX;
+			temp = startLeft + dis;
+			// console.log(kindsWidth);
+			if (temp>0) {
+				temp = 0;
+			}
+			if (temp<(wrapWidth- kindsWidth)) {
+				temp = (wrapWidth- kindsWidth);
+			}
+			$kinds.css('left',temp);
+		})
+	})();
+	//号码分布
+	(function(){
+		var $btns1 = $('#content .tabContent .four .tabNumber span');
+		var $btns2 = $('#content .tabContent .four .kinds span');
+		var $balls = $('#content .tabContent .four .balls');
+		var chooseNumber1 = 0;
+		var isFirst = true;
+		var isTwo = false;
+		$btns1.on('click',function(){
+			if (isTwo) {
+				for (var i=0; i<$balls.length; i++) {
+					var $spans = $balls.eq(i);
+					for (var j=0; j<10; j++) {
+						$spans.find('span').addClass('mask');
+					}
+				}
+			}
+			isTwo = false;
+			if (isFirst) {
+				for (var i=0; i<$balls.length; i++) {
+					var $spans = $balls.eq(i);
+					for (var j=0; j<10; j++) {
+						$spans.find('span').addClass('mask');
+					}
+				}
+				isFirst = false;
+			}
+			$btns2.removeClass('active');
+			chooseNumber1 = $(this).index()+1;
+			$(this).toggleClass('active');
+			if ($(this).hasClass('active')) {
+				run1(chooseNumber1);
+			}else {
+				unrun1(chooseNumber1);
+			}
+		});
+		$btns2.on('click',function(){
+			isTwo = true;
+			$(this).addClass('active').siblings().removeClass('active');
+			$btns1.removeClass('active');
+			for (var i=0; i<$balls.length; i++) {
+				var $spans = $balls.eq(i);
+				for (var j=0; j<10; j++) {
+					$spans.find('span').addClass('mask');
+				}
+			}
+			if ($(this).index() == 0) {
+				run1(1);
+				run1(3);
+				run1(5);
+				run1(7);
+				run1(9);
+			}else if  ($(this).index() == 1) {
+				run1(2);
+				run1(4);
+				run1(6);
+				run1(8);
+				run1(10);
+			}else if  ($(this).index() == 2) {
+				run1(6);
+				run1(7);
+				run1(8);
+				run1(9);
+				run1(10);
+			}else if  ($(this).index() == 3) {
+				run1(1);
+				run1(2);
+				run1(3);
+				run1(4);
+				run1(5);
+			}
+		});
+		function run1 (num1) {
+			
+			for (var i=0; i<$balls.length; i++) {
+				var $spans = $balls.eq(i);
+				for (var j=0; j<10; j++) {
+					var n = $spans.find('span').eq(j).html();
+					n = parseInt(n);
+					if (n == num1) {
+						$spans.find('span').eq(j).removeClass('mask');
+					}
+				}
+			}
+		}
+		function unrun1 (num1) {
+			for (var i=0; i<$balls.length; i++) {
+				var $spans = $balls.eq(i);
+				for (var j=0; j<10; j++) {
+					var n = $spans.find('span').eq(j).html();
+					n = parseInt(n);
+					if (n == num1) {
+						$spans.find('span').eq(j).addClass('mask');
+					}
+				}
+			}
+		}
+	})();
+	/*tab第一个nav*/
 	(function(){
 		var $btns = $('#content .tabTitle div')
 		var $sections = $('#content .tabContent .item');
@@ -11,6 +152,15 @@ $(function(){
 				canvasRun();
 			}
 		})
+	})();
+	//开奖号码第二个nav
+	(function(){
+		var $btns = $('#content .tabContent .one .navTitle .itemTwo');
+		var $uls = $('#content .tabContent .one .conWrap ul')
+		$btns.on('click',function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$uls.eq($(this).index()-2).show().siblings().hide();
+		});
 	})();
 	//canvas
 	function canvasRun (){
@@ -55,6 +205,69 @@ $(function(){
 			cxt.moveTo(x,y);
 			cxt.lineTo(x1,y1);
 			cxt.stroke();
+		}
+	}
+	//给十个球加底色等等
+	function colorballs () {
+		var colorArr = ['#fbdf43','#3582ff','#4d4e46','#f2772c',
+		'#97fbfe','#5707ff','#e3e3e3','#fd2b21','#731402','#54c11f'];
+		//号码分布
+		var $ballArr = $('#content .tabContent .four .balls');
+		for (var i=0; i<$ballArr.length; i++) {
+			for (var j=0; j<10; j++) {
+				var n = $ballArr.eq(i).find('span').eq(j).html();
+				n = parseInt(n);
+				$ballArr.eq(i).find('span').eq(j).css('backgroundColor',colorArr[n-1]);
+			}
+		}
+		//号码
+		var $ballArr1 = $('#content .tabContent .conWrap .ul11 .balls');
+		for (var i=0; i<$ballArr1.length; i++) {
+			for (var j=0; j<10; j++) {
+				var n = $ballArr1.eq(i).find('span').eq(j).html();
+				n = parseInt(n);
+				$ballArr1.eq(i).find('span').eq(j).css('backgroundColor',colorArr[n-1]);
+				
+			}
+		}
+		//大小
+		var $ballArr2 = $('#content .tabContent .conWrap .ul12 .balls');
+		for (var i=0; i<$ballArr2.length; i++) {
+			for (var j=0; j<10; j++) {
+				var n = $ballArr2.eq(i).find('span').eq(j).html();
+				if (n == '大') {
+					$ballArr2.eq(i).find('span').eq(j).addClass('active');
+				}else {
+					$ballArr2.eq(i).find('span').eq(j).removeClass('active');
+				}
+				
+			}
+		}
+		//单双
+		var $ballArr3 = $('#content .tabContent .conWrap .ul13 .balls');
+		for (var i=0; i<$ballArr3.length; i++) {
+			for (var j=0; j<10; j++) {
+				var n = $ballArr3.eq(i).find('span').eq(j).html();
+				if (n == '双') {
+					$ballArr3.eq(i).find('span').eq(j).addClass('active');
+				}else {
+					$ballArr3.eq(i).find('span').eq(j).removeClass('active');
+				}
+				
+			}
+		}
+		//冠军龙虎
+		var $ballArr4 = $('#content .tabContent .conWrap .ul14 .balls');
+		for (var i=0; i<$ballArr4.length; i++) {
+			for (var j=0; j<10; j++) {
+				var n = $ballArr4.eq(i).find('span').eq(j).html();
+				if (n == '龙') {
+					$ballArr4.eq(i).find('span').eq(j).addClass('yellow');
+				}else if (n == '虎') {
+					$ballArr4.eq(i).find('span').eq(j).addClass('grey');
+				}
+				
+			}
 		}
 	}
 	//选择时间
@@ -244,9 +457,11 @@ $(function(){
 	(function(){
 		var $btn = $('header .lotteryType');
 		$btn.on('click',function(){
-			window.location.href = '../html/totalType.html';
+			window.location.href = '../html/totalType.html?type=trend';
 		})
 	})();
+	
+
 
 	/*阻止body跟着弹窗移动*/
 	function stopScroll() {

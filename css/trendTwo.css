@@ -1,0 +1,832 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+footer {
+  z-index: 110;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.92rem;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+}
+footer .item {
+  width: 20%;
+  height: 1.92rem;
+  height: 100px;
+  color: #888;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+footer .item.active {
+  color: #0099df;
+}
+footer .index {
+  background: url(../img/index.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .index.active {
+  background: url(../img/indexA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .purchaseLottery {
+  background: url(../img/purchase.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .purchaseLottery.active {
+  background: url(../img/purchaseA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .trend {
+  background: url(../img/trend.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .trend.active {
+  background: url(../img/trendA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .mine {
+  background: url(../img/mine.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+footer .mine.active {
+  background: url(../img/mineA.png) no-repeat;
+  background-size: 20px 20px;
+  background-position: center 5px;
+}
+body {
+  margin-top: 1.76rem;
+  margin-bottom: 1.92rem;
+}
+header {
+  width: 100%;
+  height: 1.76rem;
+  background-color: #0099df;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header img {
+  width: 4rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.28rem;
+  left: 0.2rem;
+}
+header .lotteryType {
+  height: 0.8rem;
+  color: #fff;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0.48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .lotteryType span {
+  float: right;
+  width: 0.64rem;
+  height: 0.32rem;
+  margin-top: 0.24rem;
+  background: url(../img/downArrow.png) no-repeat;
+  background-size: 0.64rem 0.32rem;
+}
+header .date {
+  height: 0.8rem;
+  color: #fff;
+  line-height: 0.8rem;
+  font-size: 0.64rem;
+  position: absolute;
+  top: 0.48rem;
+  right: 0.2rem;
+}
+header .date span {
+  float: right;
+  width: 0.64rem;
+  height: 0.32rem;
+  margin-top: 0.24rem;
+  background: url(../img/downArrow.png) no-repeat;
+  background-size: 0.64rem 0.32rem;
+}
+#content {
+  width: 100%;
+}
+#content .separatorH {
+  width: 100%;
+  height: 0.48rem;
+  background-color: #eeeeee;
+}
+#content .tabTitle {
+  width: 100%;
+  height: 1.6rem;
+  border-bottom: 0.04rem solid #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+}
+#content .tabTitle div {
+  width: 20%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #212121;
+}
+#content .tabTitle div.active {
+  border-bottom: 0.04rem solid #ec0022;
+  color: #ec0022;
+}
+#content .tabContent {
+  width: 100%;
+}
+#content .tabContent .one {
+  width: 100%;
+  display: block;
+}
+#content .tabContent .one .navTitle {
+  width: 100%;
+  height: 1.72rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.08rem solid #eeeeee;
+}
+#content .tabContent .one .navTitle div {
+  height: 1.04rem;
+  font-size: 0.56rem;
+  line-height: 1.04rem;
+  padding: 0 0.4rem;
+  text-align: center;
+  color: #222;
+  border-radius: 0.52rem;
+}
+#content .tabContent .one .navTitle div.active {
+  color: #fff;
+  background-color: #ff7614;
+}
+#content .tabContent .one .conWrap {
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul11 {
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul11 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul11 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul11 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul11 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul11 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: #0099df;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+}
+#content .tabContent .one .conWrap .ul12 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul12 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul12 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul12 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul12 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul12 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #b2b2b2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+  border-radius: 0.4rem;
+}
+#content .tabContent .one .conWrap .ul12 li .balls span.active {
+  background-color: #ff7614;
+}
+#content .tabContent .one .conWrap .ul13 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul13 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul13 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul13 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul13 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul13 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #b2b2b2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+  border-radius: 0.4rem;
+}
+#content .tabContent .one .conWrap .ul13 li .balls span.active {
+  background-color: #ff7614;
+}
+#content .tabContent .one .conWrap .ul14 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul14 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul14 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul14 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul14 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span {
+  width: 1.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.48rem;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span.grey {
+  color: #b2b2b2;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span.yellow {
+  color: #ff7614;
+}
+#content .tabContent .two {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .two ul {
+  width: 94%;
+  margin-left: 3%;
+}
+#content .tabContent .two ul li {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+#content .tabContent .two ul li .rank {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #9da9c2;
+  color: #fff;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  text-align: center;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+#content .tabContent .two ul li:nth-of-type(1) .rank {
+  background-color: #ff7614;
+}
+#content .tabContent .two ul li:nth-of-type(2) .rank {
+  background-color: #2eaae8;
+}
+#content .tabContent .two ul li table {
+  width: 100%;
+  border-left: 0.04rem solid #eee;
+  text-align: center;
+  border-collapse: collapse;
+}
+#content .tabContent .two ul li table tr {
+  width: 100%;
+  height: 1.6rem;
+}
+#content .tabContent .two ul li table tr td {
+  width: 25%;
+  border-right: 0.04rem solid #eee;
+  border-bottom: 0.04rem solid #eee;
+  font-size: 0.52rem;
+  color: #989898;
+}
+#content .tabContent .three {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .three ul {
+  width: 100%;
+}
+#content .tabContent .three ul li {
+  float: left;
+  width: 33%;
+  height: 1.88rem;
+  padding: 0.32rem;
+  box-sizing: border-box;
+}
+#content .tabContent .three ul li .shadow {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #e8e7e1;
+  text-align: center;
+  line-height: 1.24rem;
+  font-size: 0.52rem;
+}
+#content .tabContent .three ul li .shadow span {
+  color: red;
+}
+#content .tabContent .four {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .four .tabNumber {
+  width: 100%;
+  height: 2.04rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.16rem;
+  box-sizing: border-box;
+}
+#content .tabContent .four .tabNumber span {
+  width: 8%;
+  height: 1.32rem;
+  line-height: 1.32rem;
+  text-align: center;
+  border: 0.04rem solid #eee;
+  border-radius: 0.16rem;
+  font-size: 0.48rem;
+  color: #989898;
+}
+#content .tabContent .four .tabNumber span.active {
+  background-color: #0099df;
+  color: #fff;
+}
+#content .tabContent .four .kinds {
+  width: calc(100% - 0.4rem);
+  height: 1.16rem;
+  margin-left: 0.2rem;
+  box-sizing: border-box;
+  border: 0.04rem solid #ff7614;
+  border-radius: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+#content .tabContent .four .kinds span {
+  float: left;
+  width: 25%;
+  height: 1.08rem;
+  line-height: 1.08rem;
+  box-sizing: border-box;
+  border-right: 0.04rem solid #ff7614;
+  text-align: center;
+  color: #ff7614;
+  font-size: 0.52rem;
+}
+#content .tabContent .four .kinds span:nth-of-type(4) {
+  border-right: none;
+}
+#content .tabContent .four .kinds span.active {
+  background-color: #ff7614;
+  color: #fff;
+}
+#content .tabContent .four ul {
+  width: 100%;
+}
+#content .tabContent .four ul li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .four ul li .time {
+  float: left;
+  width: 15%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .four ul li .times {
+  float: left;
+  width: 20%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .four ul li .balls {
+  float: left;
+  width: 64%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .four ul li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #0099df;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+  border-radius: 0.4rem;
+}
+#content .tabContent .four ul li .balls span.mask {
+  opacity: 0.1;
+}
+#content .tabContent .five {
+  display: none;
+}
+#content .tabContent .five .kindsWrap {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #eee;
+  padding-top: 0.32rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+#content .tabContent .five .kindsWrap .kinds {
+  position: absolute;
+  width: 32rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .five .kindsWrap .kinds span {
+  padding: 0 0.4rem;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  border-radius: 0.48rem;
+  background-color: #eee;
+  font-size: 0.56rem;
+  color: #222;
+  margin-bottom: 0.52rem;
+}
+#content .tabContent .five .kindsWrap .kinds span.active {
+  color: #fff;
+  background-color: #ff7a21;
+}
+#content .tabContent .five .tableWrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#content .tabContent .five .tableWrap canvas {
+  z-index: 100;
+  background: transparent;
+  position: absolute;
+  width: 80%;
+  height: calc(100% - 1.36rem);
+  top: 1.36rem;
+  left: 20%;
+}
+#content .tabContent .five .tableWrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#content .tabContent .five .tableWrap table tbody tr {
+  width: 100%;
+  text-align: center;
+}
+#content .tabContent .five .tableWrap table tbody tr th {
+  width: 20%;
+  background-color: #e8e4de;
+  height: 1.28rem;
+  border: 0.04rem solid #ede9e5;
+  font-size: 0.52rem;
+  font-weight: normal;
+}
+#content .tabContent .five .tableWrap table tbody tr:nth-of-type(odd) th {
+  background-color: #eee;
+}
+#content .tabContent .five .tableWrap table tbody tr td {
+  height: 1.28rem;
+  border: 0.04rem solid #ede9e5;
+  text-align: center;
+  position: relative;
+}
+#content .tabContent .five .tableWrap table tbody tr td div {
+  width: 100%;
+  height: 100%;
+  font-size: 0.52rem;
+  line-height: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#content .tabContent .five .tableWrap table tbody tr td.active div {
+  color: #fff;
+  background-color: #ec0022;
+  z-index: 101;
+}
+#content .tabContent .five .tableWrap table tbody tr:nth-of-type(odd) {
+  background-color: #eee;
+}
+#content .tabContent .five .tableWrap table tbody tr:nth-of-type(odd) td:nth-of-type(1) {
+  background-color: #eee;
+}
+#content .tabContent .five .tableWrap table thead tr {
+  width: 100%;
+  text-align: center;
+}
+#content .tabContent .five .tableWrap table thead tr th {
+  height: 1.28rem;
+  font-size: 0.52rem;
+  border: 0.04rem solid #ede9e5;
+  background-color: #dad2ca;
+  color: #fff;
+}
+#content .tabContent .five .tableWrap table thead tr th:nth-of-type(1) {
+  background-color: #f8f5f2;
+  color: #333;
+}
+#mask {
+  display: none;
+  z-index: 103;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#dateDialog {
+  display: none;
+  z-index: 104;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
+  background-color: #fff;
+}
+#dateDialog .topBtns {
+  width: 100%;
+  height: 1.6rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#dateDialog .topBtns .cancel {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .topBtns .sure {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .bot {
+  width: 100%;
+  height: 10.36rem;
+}
+#dateDialog .bot .year {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .year ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .year ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .month {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .month ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .month ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .day {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .day ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .day ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .mask {
+  width: 100%;
+  height: 1.44rem;
+  position: absolute;
+  top: 3.08rem;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 104;
+}

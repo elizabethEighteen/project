@@ -160,8 +160,9 @@ header .mainTitle {
   height: 1.28rem;
   line-height: 1.28rem;
   font-size: 0.64rem;
+  position: relative;
 }
-#content .datePicker .type span {
+#content .datePicker .type .downA {
   float: right;
   width: 0.8rem;
   height: 0.4rem;
@@ -170,12 +171,36 @@ header .mainTitle {
   background: url(../img/downArrow.png) no-repeat;
   background-size: 0.8rem 0.4rem;
 }
-#content ul {
+#content .datePicker .type #finalDialog {
+  display: none;
+  z-index: 113;
+  width: 3rem;
+  padding: 0.2rem 0.6rem;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  border-radius: 0.2rem;
+}
+#content .datePicker .type #finalDialog ul {
+  width: 100%;
+}
+#content .datePicker .type #finalDialog ul li {
+  width: 100%;
+  height: 1.2rem;
+  border-bottom: 0.04rem solid #ccc;
+  line-height: 1.2rem;
+  font-size: 0.64rem;
+  text-align: center;
+}
+#content .conUl {
   width: 90%;
   margin-left: 5%;
   margin-top: 0.8rem;
 }
-#content ul li {
+#content .conUl li {
   float: left;
   width: 33.3%;
   height: 4.8rem;
@@ -184,13 +209,13 @@ header .mainTitle {
   box-sizing: border-box;
   position: relative;
 }
-#content ul li:nth-of-type(3n) {
+#content .conUl li:nth-of-type(3n) {
   border-right: none;
 }
-#content ul li:last-child {
+#content .conUl li:last-child {
   border-bottom: none;
 }
-#content ul li .title {
+#content .conUl li .title {
   width: 100%;
   height: 0.56rem;
   line-height: 0.56rem;
@@ -201,7 +226,7 @@ header .mainTitle {
   left: 0;
   text-align: center;
 }
-#content ul li .con {
+#content .conUl li .con {
   width: 100%;
   height: 0.56rem;
   line-height: 0.56rem;

@@ -302,3 +302,45 @@ header .mainTitle {
   display: none;
   width: 100%;
 }
+#content .three ul {
+  width: 100%;
+}
+#content .three ul li {
+  width: 90%;
+  padding: 0 5%;
+  height: 2.32rem;
+  border-bottom: 0.04rem solid #ccc;
+  position: relative;
+  background-color: #fff;
+}
+#content .three ul li .p1 {
+  width: 45%;
+  height: 0.56rem;
+  color: #030303;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 5%;
+}
+#content .three ul li .date {
+  width: 45%;
+  height: 0.4rem;
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  color: #969696;
+  position: absolute;
+  left: 5%;
+  bottom: 0.4rem;
+}
+#content .three ul li .ammount {
+  width: 45%;
+  height: 2.32rem;
+  line-height: 2.32rem;
+  font-size: 0.48rem;
+  color: #ff3b32;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  text-align: right;
+}

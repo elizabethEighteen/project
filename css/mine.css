@@ -59,6 +59,7 @@ p {
 }
 /*变量*/
 footer {
+  z-index: 110;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -125,12 +126,13 @@ footer .mine.active {
 body {
   margin-bottom: 1.92rem;
 }
-header {
+#header1 {
   width: 100%;
   height: 7.44rem;
   position: relative;
+  display: none;
 }
-header .top {
+#header1 .top {
   width: 100%;
   height: 5.68rem;
   position: absolute;
@@ -139,7 +141,7 @@ header .top {
   background: url(../img/bigLogo.jpg) no-repeat;
   background-size: 100% 5.68rem;
 }
-header .top .title {
+#header1 .top .title {
   width: 100%;
   text-align: center;
   height: 0.96rem;
@@ -149,7 +151,7 @@ header .top .title {
   color: #fff;
   top: 1rem;
 }
-header .top .login {
+#header1 .top .login {
   width: 2.96rem;
   height: 1.04rem;
   text-align: center;
@@ -162,7 +164,7 @@ header .top .login {
   left: 3.4rem;
   color: #fff;
 }
-header .top .register {
+#header1 .top .register {
   width: 2.96rem;
   height: 1.04rem;
   text-align: center;
@@ -175,7 +177,7 @@ header .top .register {
   right: 3.4rem;
   color: #fff;
 }
-header .mid {
+#header1 .mid {
   width: 90%;
   height: 1.76rem;
   position: absolute;
@@ -185,12 +187,12 @@ header .mid {
   border-radius: 0.2rem;
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16);
 }
-header .mid .recharge {
+#header1 .mid .recharge {
   width: 3.28rem;
   height: 0.84rem;
   box-sizing: border-box;
   padding-left: 1rem;
-  color: #be1204;
+  color: #0099df;
   line-height: 0.84rem;
   position: absolute;
   left: 1.6rem;
@@ -200,12 +202,178 @@ header .mid .recharge {
   background-size: 0.8rem 0.8rem;
   background-position: 0 center;
 }
-header .mid .withDraw {
+#header1 .mid .withDraw {
   width: 3.28rem;
   height: 0.84rem;
   box-sizing: border-box;
   padding-left: 1rem;
-  color: #be1204;
+  color: #0099df;
+  line-height: 0.84rem;
+  position: absolute;
+  right: 1.6rem;
+  top: 0.48rem;
+  font-size: 0.64rem;
+  background: url(../img/m_withDraw.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#header2 {
+  width: 100%;
+  height: 8.64rem;
+  position: relative;
+}
+#header2 .loginTop {
+  width: 100%;
+  height: 6.88rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/bigLogo.jpg) no-repeat;
+  background-size: 100% 6.88rem;
+}
+#header2 .loginTop img {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.4rem;
+}
+#header2 .loginTop .topRight {
+  width: 10.8rem;
+  height: 2.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 3.2rem;
+}
+#header2 .loginTop .topRight .t {
+  width: 100%;
+  height: 0.8rem;
+  margin-top: 0.2rem;
+}
+#header2 .loginTop .topRight .t .id {
+  float: left;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  font-size: 0.64rem;
+}
+#header2 .loginTop .topRight .t .memberType {
+  float: left;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  font-size: 0.56rem;
+  margin-left: 0.4rem;
+  background-color: #ff7614;
+  padding: 0 0.16rem;
+  border-radius: 0.08rem;
+}
+#header2 .loginTop .topRight .m {
+  width: 100%;
+  height: 0.32rem;
+  margin-top: 0.2rem;
+}
+#header2 .loginTop .topRight .m .wrap {
+  width: 100%;
+  height: 0.32rem;
+  position: relative;
+  border-radius: 0.16rem;
+  background-color: rgba(117, 57, 167, 0.5);
+}
+#header2 .loginTop .topRight .m .wrap .whiteSlider {
+  width: 50%;
+  height: 0.32rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.16rem;
+  background-color: #fff;
+}
+#header2 .loginTop .topRight .b {
+  width: 100%;
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #fff;
+}
+#header2 .loginTop .botLeft {
+  width: 40%;
+  height: 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 5%;
+}
+#header2 .loginTop .botLeft .title {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+}
+#header2 .loginTop .botLeft .con {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+}
+#header2 .loginTop .botRight {
+  width: 40%;
+  height: 2rem;
+  position: absolute;
+  top: 4rem;
+  right: 5%;
+}
+#header2 .loginTop .botRight .title {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+}
+#header2 .loginTop .botRight .con {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+}
+#header2 .mid {
+  width: 90%;
+  height: 1.76rem;
+  position: absolute;
+  left: 5%;
+  top: 6rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16);
+}
+#header2 .mid .recharge {
+  width: 3.28rem;
+  height: 0.84rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  color: #0099df;
+  line-height: 0.84rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 0.48rem;
+  font-size: 0.64rem;
+  background: url(../img/m_recharge.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#header2 .mid .withDraw {
+  width: 3.28rem;
+  height: 0.84rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  color: #0099df;
   line-height: 0.84rem;
   position: absolute;
   right: 1.6rem;
@@ -320,4 +488,62 @@ header .mid .withDraw {
   position: absolute;
   top: 0;
   right: 0;
+}
+#moneyAmountDialog {
+  display: none;
+  width: 80%;
+  padding: 0 10% 0.8rem;
+  box-sizing: border-box;
+  position: fixed;
+  top: 8.8rem;
+  left: 10%;
+  background-color: #fff;
+  border-radius: 0.16rem;
+}
+#moneyAmountDialog img {
+  display: block;
+  width: 2rem;
+  height: 1.8rem;
+  margin: 0.2rem auto;
+}
+#moneyAmountDialog .bold {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.64rem;
+  text-align: center;
+  font-weight: bold;
+}
+#moneyAmountDialog .grey {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.56rem;
+  color: #999;
+  text-align: center;
+}
+#moneyAmountDialog .goSetting {
+  display: block;
+  width: 100%;
+  height: 1.36rem;
+  border-radius: 0.68rem;
+  background-color: #0099df;
+  line-height: 1.36rem;
+  font-size: 0.64rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.48rem;
+}
+#moneyAmountDialog .close {
+  display: block;
+  width: 100%;
+  height: 1.36rem;
+  border-radius: 0.68rem;
+  border: 0.04rem solid #0099df;
+  box-sizing: border-box;
+  line-height: 1.36rem;
+  font-size: 0.64rem;
+  color: #0099df;
+  text-align: center;
+  margin-top: 0.48rem;
 }

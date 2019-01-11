@@ -48,13 +48,13 @@ header {
 		position: absolute;
 		top: 44/@r;
 		left: 0;
-		border-top: 1/@r solid rgb(28,20,200);
+		border-top: 1/@r solid #eee;
 		.leftBtn {
 			width: 25%;
 			height: 35/@r;
 			position: absolute;
 			box-shadow: 1/@r 0 3/@r rgba(0,0,0,.16);
-			border-top: 1/@r solid rgb(28,20,200);
+			border-top: 1/@r solid #eee;
 			left: 0;
 			top: -1/@r;
 
@@ -62,6 +62,7 @@ header {
 				display: block;
 				width: 60/@r;
 				height: 16/@r;
+				padding: 0 3/@r;
 				line-height: 16/@r;
 				border-radius: 8/@r;
 				text-align: center;
@@ -72,7 +73,7 @@ header {
 				top: 50%;
 				transform: translate(-50%,-50%);
 				&.active {
-					background-color: #a50018	
+					background-color: #2ab7ef;	
 				}
 			}
 		}
@@ -102,13 +103,14 @@ header {
 						border-radius: 8/@r;
 						font-size: 13/@r;
 						color: #fff;
-						padding: 0 2/@r;
-						box-sizing: border-box; 
-						&.active {
-							background-color: #a50018	
+						padding: 0 8/@r;
+						box-sizing: border-box;
+					}
+					&.active {
+						div {
+							background-color: #2ab7ef;
 						}
 					}
-
 				}
 			}
 		}

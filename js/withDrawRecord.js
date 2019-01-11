@@ -30,6 +30,11 @@ $(function(){
 		var startFirst = true;
 		var finishFirst = true;
 		//外层抽屉弹窗
+		$mask.on('click',function(){
+			$mask.hide();
+			$dialog.hide();
+			$filterDialog.hide();
+		});
 		$mainBtn.on('click',function(){
 			$mask.show();
 			$filterDialog.show();
@@ -242,7 +247,13 @@ $(function(){
 		}
 
 	})();
-
+	//点击每条记录
+	(function(){
+		var $lis = $('#content li');
+		$lis.on('click',function(){
+			window.location.href = '../html/rechargeRecordDetail.html?type=zhangbian';
+		})
+	})();
 
 	/*阻止body跟着弹窗移动*/
 	function stopScroll() {

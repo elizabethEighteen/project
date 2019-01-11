@@ -59,8 +59,9 @@ p {
 }
 /*变量*/
 body {
-  margin-top: 5.76rem;
-  margin-bottom: 4.8rem;
+  margin-top: 7.24rem;
+  margin-bottom: 6.44rem;
+  background-color: #f6f7f9;
 }
 header {
   z-index: 105;
@@ -86,22 +87,11 @@ header .mainTitle {
   font-size: 0.64rem;
   color: #fff;
   padding: 0.16rem 0.16rem 0.16rem 0.16rem;
-  border: 0.04rem solid #fff;
   border-radius: 0.08rem;
   position: absolute;
   top: 0.36rem;
   left: 50%;
   transform: translateX(-50%);
-}
-header .mainTitle span {
-  float: right;
-  width: 0.64rem;
-  height: 0.32rem;
-  margin-top: 0.16rem;
-  background: url(../img/downArrow.png) no-repeat;
-  background-size: 0.64rem 0.32rem;
-  background-position: 0.32rem 0;
-  padding: 0 0.2rem;
 }
 header .changeType {
   height: 1.76rem;
@@ -171,7 +161,7 @@ footer .sum {
   color: #fff;
 }
 footer .sum span {
-  color: red;
+  color: #0099df;
 }
 footer .cathectic {
   width: 20%;
@@ -187,14 +177,17 @@ footer .cathectic {
 }
 #nowSelect {
   width: 100%;
-  height: 1.6rem;
-  background-color: #ffeeee;
-  border-top: 0.04rem solid #999;
   position: fixed;
   left: 0;
   bottom: 2rem;
 }
-#nowSelect .leftSection {
+#nowSelect .top {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #ffeeee;
+  border-top: 0.04rem solid #999;
+}
+#nowSelect .top .leftSection {
   width: 20%;
   padding-right: 0.8rem;
   height: 1.6rem;
@@ -203,7 +196,7 @@ footer .cathectic {
   color: #898999;
   text-align: center;
 }
-#nowSelect .mid {
+#nowSelect .top .mid {
   width: calc(80% - 2.4rem);
   height: 1.6rem;
   position: absolute;
@@ -211,23 +204,63 @@ footer .cathectic {
   right: 1.6rem;
   overflow: hidden;
 }
-#nowSelect .mid p {
+#nowSelect .top .mid p {
   height: 1.6rem;
   line-height: 1.6rem;
   font-size: 0.6rem;
-  color: #f11717;
+  color: #0099df;
 }
-#nowSelect .right {
+#nowSelect .top .right {
   width: 1.6rem;
   height: 1.6rem;
   position: absolute;
   top: 0;
   right: 0;
 }
+#nowSelect .bot {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #ffeeee;
+  border-top: 0.04rem solid #999;
+}
+#nowSelect .bot .leftSection {
+  float: left;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #898999;
+}
+#nowSelect .bot .wrap {
+  float: left;
+  width: 2.4rem;
+  height: 0.96rem;
+  margin-left: 0.2rem;
+  margin-top: 0.32rem;
+  overflow: hidden;
+}
+#nowSelect .bot .wrap input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.6rem;
+  line-height: 0.96rem;
+  text-align: center;
+}
+#nowSelect .bot .rightSection {
+  float: left;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #898999;
+  margin-left: 0.2rem;
+}
+#nowSelect .bot .rightSection span {
+  color: #0099df;
+}
 #top1 {
   z-index: 100;
   width: 100%;
-  height: 4rem;
+  height: 5.48rem;
   position: fixed;
   top: 1.76rem;
   left: 0;
@@ -236,7 +269,8 @@ footer .cathectic {
 #top1 .last {
   margin-top: 0.4rem;
   width: 100%;
-  height: 0.8rem;
+  height: 1.2rem;
+  border-bottom: 0.04rem solid #ccc;
 }
 #top1 .last .title {
   width: 20%;
@@ -257,14 +291,18 @@ footer .cathectic {
 #top1 .last .balls div {
   width: 0.8rem;
   height: 0.8rem;
-  background-color: green;
+  line-height: 0.8rem;
+  background-color: #0099df;
   text-align: center;
   font-size: 0.48rem;
+  color: #fff;
+  border-radius: 0.4rem;
 }
 #top1 .now {
   width: 100%;
-  height: 0.8rem;
+  height: 1.2rem;
   margin-top: 0.4rem;
+  border-bottom: 0.04rem solid #ccc;
 }
 #top1 .now .title {
   width: 20%;
@@ -297,7 +335,7 @@ footer .cathectic {
   color: green;
 }
 #top1 .nav {
-  margin-top: 0.4rem;
+  margin-top: 1rem;
   width: 100%;
   height: 1.2rem;
   display: flex;
@@ -323,16 +361,49 @@ footer .cathectic {
 }
 #content1 .ul1 li {
   width: 100%;
-  height: 4rem;
+  height: 4.88rem;
   margin-bottom: 0.8rem;
 }
 #content1 .ul1 li .title {
   width: 15%;
-  height: 4rem;
-  line-height: 4rem;
-  font-size: 0.64rem;
+  height: 4.88rem;
   float: left;
   margin-left: 2%;
+  position: relative;
+}
+#content1 .ul1 li .title p {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.64rem;
+  background-color: #ccc;
+  padding-left: 0.2rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+}
+#content1 .ul1 li .btns {
+  width: 78%;
+  margin-right: 3%;
+  height: 0.88rem;
+  background-color: #eee;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  box-shadow: 0 0.08rem 0.16rem 0.04rem #ccc inset;
+}
+#content1 .ul1 li .btns .item {
+  width: 16.66%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.56rem;
+  text-align: center;
+}
+#content1 .ul1 li .btns .item.active {
+  background-color: #dd4413;
 }
 #content1 .ul1 li .balls {
   width: 80%;
@@ -341,7 +412,7 @@ footer .cathectic {
   float: right;
   margin-right: 2%;
 }
-#content1 .ul1 li .balls .itme {
+#content1 .ul1 li .balls .item {
   float: left;
   margin: 0.2rem;
   width: 1.6rem;
@@ -349,12 +420,13 @@ footer .cathectic {
   line-height: 1.6rem;
   font-size: 0.64rem;
   text-align: center;
-  color: #fff;
-  background-color: #eee;
+  color: #000;
+  background-color: #fff;
   border-radius: 0.8rem;
+  box-shadow: 0 0.08rem 0.16rem 0.04rem #333;
 }
-#content1 .ul1 li .balls .itme.active {
-  background-color: #ec0022;
+#content1 .ul1 li .balls .item.active {
+  background-color: #0099df;
 }
 #content1 .ul2 {
   padding-top: 0.8rem;
@@ -378,15 +450,38 @@ footer .cathectic {
 }
 #content1 .ul2 li .balls .item {
   float: left;
-  margin-left: 2%;
+  margin-bottom: 5%;
   width: 22%;
+  margin-left: 2%;
   height: 2rem;
   border-radius: 0.12rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.11);
-  line-height: 2rem;
+  background-color: #fff;
+}
+#content1 .ul2 li .balls .item .p1 {
+  width: 100%;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  font-size: 0.64rem;
+  color: #757575;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+#content1 .ul2 li .balls .item .p2 {
+  width: 100%;
+  height: 0.48rem;
+  line-height: 0.48rem;
   font-size: 0.48rem;
   color: #ec0022;
   text-align: center;
+  margin-top: 0.2rem;
+}
+#content1 .ul2 li .balls .item.active {
+  background-color: #0099df;
+}
+#content1 .ul2 li .balls .item.active .p1,
+#content1 .ul2 li .balls .item.active .p2 {
+  color: #fff;
 }
 #content1 .ul3 {
   padding-top: 0.8rem;
@@ -408,6 +503,7 @@ footer .cathectic {
   height: 2rem;
   border-radius: 0.12rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.11);
+  background-color: #fff;
 }
 #content1 .ul3 li .balls .item .p1 {
   width: 100%;
@@ -426,6 +522,13 @@ footer .cathectic {
   color: #ec0022;
   text-align: center;
   margin-top: 0.2rem;
+}
+#content1 .ul3 li .balls .item.active {
+  background-color: #0099df;
+}
+#content1 .ul3 li .balls .item.active .p1,
+#content1 .ul3 li .balls .item.active .p2 {
+  color: #fff;
 }
 #mask {
   display: none;
@@ -467,4 +570,117 @@ footer .cathectic {
 #lotteryTypeDialog ul li.active {
   color: #be1204;
   border: 0.04rem solid #be1204;
+}
+#phurchasesDialog {
+  display: none;
+  width: 84%;
+  position: fixed;
+  top: 7.2rem;
+  left: 8%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  z-index: 103;
+}
+#phurchasesDialog .top {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  text-align: center;
+  border-bottom: 0.04rem solid #ccc;
+}
+#phurchasesDialog .mid {
+  width: 100%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 0.04rem dotted #ccc;
+}
+#phurchasesDialog .mid .con1 {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 0.64rem;
+  color: #0099df;
+  word-wrap: break-word;
+  word-break: normal;
+}
+#phurchasesDialog .mid .con2 {
+  width: 100%;
+  line-height: 1.6em;
+  font-size: 0.64rem;
+  color: #999;
+  word-wrap: break-word;
+  word-break: normal;
+  margin-bottom: 0.4rem;
+}
+#phurchasesDialog .mid .null {
+  width: 0.96rem;
+  height: 0.96rem;
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+}
+#phurchasesDialog .bot {
+  width: 100%;
+  padding: 0.4rem 0 0.8rem;
+}
+#phurchasesDialog .bot p {
+  width: 90%;
+  margin-left: 5%;
+  line-height: 1.3em;
+  font-size: 0.64rem;
+  color: #999;
+}
+#phurchasesDialog .bot p span {
+  color: #0099df;
+}
+#phurchasesDialog .bot .wrap {
+  width: 90%;
+  height: 1.4rem;
+  margin-left: 5%;
+  margin-top: 0.48rem;
+}
+#phurchasesDialog .bot .wrap .blank {
+  float: left;
+  width: 45%;
+  height: 1.4rem;
+  border: 0.04rem solid #ccc;
+  border-radius: 0.16rem;
+  box-sizing: border-box;
+}
+#phurchasesDialog .bot .wrap .blank span {
+  width: 0.8rem;
+  height: 1.4rem;
+  background: url(../img/delete.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0rem center;
+  float: left;
+  margin-left: 0.8rem;
+}
+#phurchasesDialog .bot .wrap .blank div {
+  float: left;
+  height: 1.4rem;
+  color: #999;
+  font-size: 0.64rem;
+  line-height: 1.4rem;
+}
+#phurchasesDialog .bot .wrap .sure {
+  float: right;
+  width: 45%;
+  height: 1.4rem;
+  border-radius: 0.16rem;
+  background-color: #0099df;
+  text-align: center;
+  color: #999;
+  font-size: 0.64rem;
+  line-height: 1.4rem;
+  color: #fff;
+}
+#phurchasesDialog .close {
+  width: 0.64rem;
+  height: 0.64rem;
+  position: absolute;
+  top: 0.48rem;
+  right: 0.48rem;
 }

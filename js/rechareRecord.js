@@ -48,6 +48,11 @@ $(function(){
 		$lis.on('click',function(){
 			$(this).addClass('active');
 		});
+		$mask.on('click',function(){
+			$mask.hide();
+			$filterDialog.hide();
+			$dialog.hide();
+		})
 		//重选按钮
 		var $refreshBtn = $('#content .reStart');
 		$refreshBtn.on('click',function(){
@@ -242,7 +247,13 @@ $(function(){
 		}
 
 	})();
-
+	//点击一条记录
+	(function(){
+		var $lis = $('#content li');
+		$lis.on('click',function(){
+			window.location.href = '../html/rechargeRecordDetail.html?type=recharge';
+		});
+	})();
 
 	/*阻止body跟着弹窗移动*/
 	function stopScroll() {

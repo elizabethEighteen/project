@@ -252,7 +252,26 @@ $(function(){
 			$(this).addClass('active').siblings().removeClass('active');
 		});
 	})();
-
+	//back
+	(function(){
+		var $btn = $('header .back');
+		$btn.on('click',function(){
+			var url = window.location.href;
+			var str = url.split('?')[1];
+			var arr = str.split('=');
+			var type = arr[1];
+			if (type == 'mine') {
+				window.location.href = '../html/mine.html';
+			}
+		})
+	})();
+	//点击每条记录
+	(function(){
+		var $lis = $('#content li');
+		$lis.on('click',function(){
+			window.location.href = '../html/cathecticDtail.html';
+		});
+	})();
 
 	/*阻止body跟着弹窗移动*/
 	function stopScroll() {

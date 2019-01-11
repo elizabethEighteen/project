@@ -235,41 +235,41 @@ header .date span {
 #content .tabContent .one .conWrap {
   width: 100%;
 }
-#content .tabContent .one .conWrap ul {
+#content .tabContent .one .conWrap .ul11 {
   width: 100%;
 }
-#content .tabContent .one .conWrap ul li {
+#content .tabContent .one .conWrap .ul11 li {
   width: 100%;
   height: 1.84rem;
   border-bottom: 0.04rem solid #eee;
 }
-#content .tabContent .one .conWrap ul li .time {
+#content .tabContent .one .conWrap .ul11 li .time {
   float: left;
-  width: 15%;
+  width: 12%;
   height: 1.84rem;
   line-height: 1.84rem;
   font-size: 0.52rem;
   text-align: center;
   color: #999999;
 }
-#content .tabContent .one .conWrap ul li .times {
+#content .tabContent .one .conWrap .ul11 li .times {
   float: left;
-  width: 20%;
+  width: 18%;
   height: 1.84rem;
   line-height: 1.84rem;
   font-size: 0.52rem;
   text-align: center;
   color: #999999;
 }
-#content .tabContent .one .conWrap ul li .balls {
+#content .tabContent .one .conWrap .ul11 li .balls {
   float: left;
-  width: 64%;
+  width: 69%;
   height: 1.84rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#content .tabContent .one .conWrap ul li .balls span {
+#content .tabContent .one .conWrap .ul11 li .balls span {
   width: 0.8rem;
   height: 0.8rem;
   line-height: 0.8rem;
@@ -277,6 +277,148 @@ header .date span {
   color: #fff;
   text-align: center;
   font-size: 0.56rem;
+}
+#content .tabContent .one .conWrap .ul12 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul12 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul12 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul12 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul12 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul12 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #b2b2b2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+}
+#content .tabContent .one .conWrap .ul12 li .balls span.active {
+  background-color: #ff7614;
+}
+#content .tabContent .one .conWrap .ul13 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul13 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul13 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul13 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul13 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul13 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #b2b2b2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.56rem;
+}
+#content .tabContent .one .conWrap .ul13 li .balls span.active {
+  background-color: #ff7614;
+}
+#content .tabContent .one .conWrap .ul14 {
+  display: none;
+  width: 100%;
+}
+#content .tabContent .one .conWrap .ul14 li {
+  width: 100%;
+  height: 1.84rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .tabContent .one .conWrap .ul14 li .time {
+  float: left;
+  width: 12%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul14 li .times {
+  float: left;
+  width: 18%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.52rem;
+  text-align: center;
+  color: #999999;
+}
+#content .tabContent .one .conWrap .ul14 li .balls {
+  float: left;
+  width: 69%;
+  height: 1.84rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span {
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.56rem;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span.grey {
+  background-color: #b2b2b2;
+}
+#content .tabContent .one .conWrap .ul14 li .balls span.yellow {
+  background-color: #ff7614;
 }
 #content .tabContent .two {
   display: none;
@@ -293,12 +435,18 @@ header .date span {
 #content .tabContent .two ul li .rank {
   width: 100%;
   height: 1.6rem;
-  background-color: #ff7614;
+  background-color: #9da9c2;
   color: #fff;
   line-height: 1.6rem;
   font-size: 0.64rem;
   text-align: center;
   border-radius: 0.2rem 0.2rem 0 0;
+}
+#content .tabContent .two ul li:nth-of-type(1) .rank {
+  background-color: #ff7614;
+}
+#content .tabContent .two ul li:nth-of-type(2) .rank {
+  background-color: #2eaae8;
 }
 #content .tabContent .two ul li table {
   width: 100%;
@@ -365,6 +513,10 @@ header .date span {
   font-size: 0.48rem;
   color: #989898;
 }
+#content .tabContent .four .tabNumber span.active {
+  background-color: #0099df;
+  color: #fff;
+}
 #content .tabContent .four .kinds {
   width: calc(100% - 0.4rem);
   height: 1.16rem;
@@ -387,6 +539,10 @@ header .date span {
 }
 #content .tabContent .four .kinds span:nth-of-type(4) {
   border-right: none;
+}
+#content .tabContent .four .kinds span.active {
+  background-color: #ff7614;
+  color: #fff;
 }
 #content .tabContent .four ul {
   width: 100%;
@@ -431,6 +587,9 @@ header .date span {
   text-align: center;
   font-size: 0.56rem;
 }
+#content .tabContent .four ul li .balls span.mask {
+  opacity: 0.1;
+}
 #content .tabContent .five {
   display: none;
 }
@@ -441,14 +600,17 @@ header .date span {
   padding-top: 0.32rem;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
 #content .tabContent .five .kindsWrap .kinds {
-  width: 40rem;
+  position: absolute;
+  width: 32rem;
   height: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #content .tabContent .five .kindsWrap .kinds span {
-  float: left;
-  margin-left: 0.4rem;
   padding: 0 0.4rem;
   height: 0.96rem;
   line-height: 0.96rem;
@@ -456,6 +618,7 @@ header .date span {
   background-color: #eee;
   font-size: 0.56rem;
   color: #222;
+  margin-bottom: 0.52rem;
 }
 #content .tabContent .five .kindsWrap .kinds span.active {
   color: #fff;

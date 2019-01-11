@@ -1,0 +1,406 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  margin-top: 1.76rem;
+  background-color: #eee;
+}
+header {
+  z-index: 105;
+  width: 100%;
+  height: 1.76rem;
+  background-color: #0099df;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .back {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url(../img/back.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+header .mainTitle {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  position: absolute;
+  top: 0.48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#content {
+  width: 100%;
+}
+#content .topWrap {
+  width: 100%;
+  background-color: #fff;
+}
+#content .topWrap .createQR {
+  width: 92%;
+  height: 2rem;
+  margin-left: 4%;
+  border-bottom: 0.04rem solid #ccc;
+}
+#content .topWrap .createQR input {
+  float: left;
+  width: calc(100% - 3.6rem);
+  height: 1.76rem;
+  padding-left: 2.4rem;
+  box-sizing: border-box;
+  font-size: 0.64rem;
+  background: url(../img/admin.png) no-repeat;
+  background-size: 1rem 1rem;
+  background-position: 0 center;
+  margin-top: 0.12rem;
+}
+#content .topWrap .createQR .btn {
+  width: 3.6rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  font-size: 0.56rem;
+  color: #ff7614;
+  border: 0.04rem solid #ff7614;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0.56rem;
+  float: right;
+  margin-top: 0.44rem;
+}
+#content .topWrap .userType {
+  width: 92%;
+  height: 2rem;
+  margin-left: 4%;
+  border-bottom: 0.04rem solid #ccc;
+}
+#content .topWrap .userType .title {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+}
+#content .topWrap .userType .proxy,
+#content .topWrap .userType .member {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+  margin-left: 0.8rem;
+  color: #989898;
+  padding-left: 1rem;
+  background: url(../img/checkboxNot.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0rem center;
+}
+#content .topWrap .userType .proxy.active,
+#content .topWrap .userType .member.active {
+  background: url(../img/checkboxYes.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0rem center;
+}
+#content .topWrap .onOff {
+  width: 92%;
+  height: 2rem;
+  margin-left: 4%;
+  border-bottom: 0.04rem solid #ccc;
+}
+#content .topWrap .onOff .title {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+}
+#content .topWrap .onOff .con {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+  margin-left: 0.8rem;
+  color: #989898;
+  padding-left: 0.96rem;
+  background: url(../img/protocal.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content .topWrap .onOff .con.active {
+  background: url(../img/protocalChecked.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0 center;
+}
+#content .topWrap .percent {
+  width: 92%;
+  height: 2rem;
+  margin-left: 4%;
+  border-bottom: 0.04rem solid #ccc;
+}
+#content .topWrap .percent .title {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+}
+#content .topWrap .percent .con {
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+  margin-left: 0.8rem;
+  color: #989898;
+}
+#content .topWrap .slider {
+  width: 92%;
+  height: 2rem;
+  margin-left: 4%;
+}
+#content .topWrap .slider .leftSection {
+  width: 20%;
+  height: 2rem;
+  float: left;
+}
+#content .topWrap .slider .leftSection .p1 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #ff7614;
+  text-align: center;
+}
+#content .topWrap .slider .leftSection .p2 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #ff7614;
+  text-align: center;
+}
+#content .topWrap .slider .rightSection {
+  width: 20%;
+  height: 2rem;
+  float: right;
+}
+#content .topWrap .slider .rightSection .p1 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #ff7614;
+  text-align: center;
+}
+#content .topWrap .slider .rightSection .p2 {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.56rem;
+  color: #ff7614;
+  text-align: center;
+}
+#content .topWrap .slider .midSection {
+  width: 50%;
+  height: 2rem;
+  float: left;
+  margin-left: 3%;
+  position: relative;
+}
+#content .topWrap .slider .midSection .lineWrap {
+  width: 105%;
+  height: 0.32rem;
+  background-color: #eee;
+  position: absolute;
+  top: 0.84rem;
+  left: 0%;
+  border-radius: 0.16rem;
+}
+#content .topWrap .slider .midSection .lineWrap .line {
+  width: 105%;
+  height: 0.32rem;
+  background-color: #ff7614;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.16rem;
+}
+#content .topWrap .slider .midSection .ball {
+  width: 0.96rem;
+  height: 0.96rem;
+  background-color: #ff7614;
+  position: absolute;
+  top: 0.52rem;
+  left: 100%;
+  border-radius: 0.48rem;
+}
+#content .totalBtn {
+  width: 90%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.72rem;
+  text-align: center;
+  color: #fff;
+  background-color: #0099df;
+  margin-left: 5%;
+  border-radius: 0.16rem;
+  margin-top: 0.48rem;
+}
+#content .introduction {
+  width: 100%;
+  padding: 1.4rem 0.48rem 0.8rem 0.48rem;
+  box-sizing: border-box;
+}
+#content .introduction .tit {
+  width: 100%;
+  line-height: 1.3em;
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+#content .introduction .tit span {
+  color: #0099df;
+}
+#content .introduction .bd {
+  width: 100%;
+}
+#content .introduction .bd p {
+  width: 100%;
+  line-height: 1.3em;
+  font-size: 0.56rem;
+  margin-bottom: 0.2rem;
+}
+#content .introduction .bd p .num {
+  font-family: bold;
+}
+#mask {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+}
+#dialog {
+  display: none;
+  z-index: 112;
+  width: 100%;
+  height: 12.6rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+#dialog .wrap {
+  width: 100%;
+  height: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dialog .wrap .cancel {
+  float: left;
+  width: 4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #333;
+}
+#dialog .wrap .sure {
+  float: right;
+  width: 4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #333;
+}
+#dialog .ulWrap {
+  width: 100%;
+  height: 11.2rem;
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  overflow: hidden;
+}
+#dialog .ulWrap ul {
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 112;
+}
+#dialog .ulWrap ul li {
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dialog .mask {
+  width: 100%;
+  height: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 6.2rem;
+  left: 0;
+  z-index: 111;
+}

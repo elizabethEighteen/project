@@ -141,7 +141,7 @@ header {
 				text-align: right;
 			}
 			.four {
-				width: 45%;
+				width: 57%;
 				height: 16/@r;
 				line-height: 16/@r;
 				font-size: 13/@r;
@@ -150,15 +150,34 @@ header {
 				left: 3%;
 			}
 			.five {
-				width: 45%;
-				height: 13/@r;
-				line-height: 13/@r;
-				font-size: 13/@r;
+				width: 37%;
+				height: 15/@r;
 				position: absolute;
-				bottom: 16/@r;
+				bottom: 15/@r;
 				right: 3%;
-				color: #ec0022;
-				text-align: right;
+				bottom: 15/@r;
+				p {
+					float: right;
+					height: 15/@r;
+					line-height: 15/@r;
+					font-size: 13/@r;
+					color: #868484;
+				}
+				&.active {
+					span {
+					// display: none;
+						float: right;
+						width: 15/@r;
+						height: 15/@r;
+						background: url(../img/cup.png) no-repeat;
+						background-size: 15/@r 15/@r;
+						background-position: 0 center;
+						margin-right: 3/@r;
+					}
+					p {
+						color: #ec0022;
+					}
+				}
 			}
 		}
 	}

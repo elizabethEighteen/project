@@ -101,6 +101,17 @@ header img {
   left: 50%;
   transform: translateX(-50%);
 }
+header .money {
+  display: none;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.68rem;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  top: 0.28rem;
+  right: 0.2rem;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -399,4 +410,80 @@ footer .mine {
   top: 0;
   color: #333;
   text-align: right;
+}
+#mask {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+}
+#dialog {
+  z-index: 111;
+  width: 90%;
+  background-color: #fff;
+  position: fixed;
+  top: 6.4rem;
+  left: 5%;
+  border-radius: 0.16rem;
+}
+#dialog .title {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #0099df;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #fff;
+  text-align: center;
+}
+#dialog ul {
+  width: 100%;
+  padding: 0 0.6rem;
+  box-sizing: border-box;
+}
+#dialog ul .lititle {
+  width: 100%;
+  height: 2rem;
+  border-bottom: 0.04rem solid #ccc;
+  line-height: 2rem;
+  font-size: 0.64rem;
+}
+#dialog ul .lititle.active {
+  background-color: #eee;
+}
+#dialog ul .lititle span {
+  float: left;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  margin-top: 0.8rem;
+  background-color: #0099df;
+  margin-right: 0.4rem;
+}
+#dialog ul .licon {
+  display: none;
+  width: 100%;
+}
+#dialog ul .licon .p1 {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 0.64rem;
+  color: #ff7614;
+  margin-top: 0.4rem;
+}
+#dialog ul .licon .p2 {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 0.64rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+#dialog img {
+  position: absolute;
+  top: 0.12rem;
+  right: 0.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }

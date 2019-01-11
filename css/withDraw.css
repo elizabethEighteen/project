@@ -89,170 +89,43 @@ header .mainTitle {
   left: 50%;
   transform: translateX(-50%);
 }
-header .free {
-  height: 0.64rem;
-  position: absolute;
-  line-height: 0.64rem;
-  font-size: 0.64rem;
-  color: #fff;
-  right: 2%;
-  top: 0.56rem;
-}
 #content {
   width: 100%;
-  padding-top: 0.4rem;
 }
-#content .card {
-  width: 90%;
-  margin-left: 5%;
-  height: 5.04rem;
-  background-color: #fff;
-  position: relative;
-  padding-left: 2.8rem;
-  box-sizing: border-box;
-  padding-top: 0.6rem;
-}
-#content .card img {
-  width: 1.68rem;
-  height: 1.68rem;
-  position: absolute;
-  top: 1.64rem;
-  left: 0.4rem;
-  background-color: green;
-}
-#content .card .bankName {
-  width: 50%;
-  line-height: 1.2em;
-  font-size: 0.68rem;
-}
-#content .card .peopleName {
-  width: 50%;
-  line-height: 1.2em;
-  font-size: 0.52rem;
-  margin-top: 0.2rem;
-  color: #989898;
-}
-#content .card .location {
-  width: 50%;
-  line-height: 1.2em;
-  font-size: 0.52rem;
-  margin-top: 0.2rem;
-  color: #989898;
-}
-#content .card .cardNumber {
-  width: 70%;
-  line-height: 1.2em;
-  font-size: 0.64rem;
-  margin-top: 0.2rem;
-  color: #757575;
-}
-#content .withDrawAmount {
-  width: 90%;
-  height: 7.8rem;
-  background-color: #fff;
-  box-shadow: 0 0 10px 2px #cccc;
-  border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
-  margin-top: 0.4rem;
-  margin-left: 5%;
-}
-#content .withDrawAmount .title {
+#content ul {
   width: 100%;
-  height: 0.56rem;
-  line-height: 0.56rem;
-  font-size: 0.56rem;
-  color: #333333;
 }
-#content .withDrawAmount .amount {
-  margin-top: 0.6rem;
+#content ul li {
   width: 100%;
-  height: 0.64rem;
-  padding-bottom: 0.4rem;
+  height: 2rem;
   border-bottom: 0.04rem solid #ccc;
-}
-#content .withDrawAmount .amount input {
-  display: block;
-  width: 100%;
-  height: 0.64rem;
-  line-height: 0.64rem;
-  font-size: 0.64rem;
-  color: #e62c2c;
-}
-#content .withDrawAmount .tip {
-  width: 100%;
-  height: 0.48rem;
-  line-height: 0.48rem;
-  font-size: 0.48rem;
-  color: #999999;
-  margin-top: 0.4rem;
-}
-#content .withDrawAmount .tipPassword {
-  width: 100%;
-  height: 0.56rem;
-  line-height: 0.56rem;
-  font-size: 0.56rem;
-  color: #333333;
-  margin-top: 0.6rem;
-}
-#content .withDrawAmount .amountPassword {
-  margin-top: 0.2rem;
-  width: 6.52rem;
-  height: 1.6rem;
-  position: relative;
-  border: 0.04rem solid #ccc;
-}
-#content .withDrawAmount .amountPassword .item {
-  position: absolute;
-  width: 1.6rem;
-  height: 1.6rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  padding-left: 2.2rem;
   box-sizing: border-box;
-  border-right: 0.04rem solid #ccc;
-  top: 0;
+  position: relative;
 }
-#content .withDrawAmount .amountPassword .item:nth-of-type(1) {
-  left: 0;
+#content ul li:nth-of-type(1) {
+  background: url(../img/wechat.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: 0.4rem center;
 }
-#content .withDrawAmount .amountPassword .item:nth-of-type(2) {
-  left: 1.64rem;
+#content ul li:nth-of-type(2) {
+  background: url(../img/pay.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: 0.4rem center;
 }
-#content .withDrawAmount .amountPassword .item:nth-of-type(3) {
-  left: 3.28rem;
+#content ul li:nth-of-type(3) {
+  background: url(../img/card.png) no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: 0.4rem center;
 }
-#content .withDrawAmount .amountPassword .item:nth-of-type(4) {
-  left: 4.92rem;
-  border-right: none;
-}
-#content .withDrawAmount .amountPassword .input {
-  width: 6.4rem;
-  height: 1.6rem;
+#content ul li span {
+  width: 0.44rem;
+  height: 0.8rem;
   position: absolute;
-  top: 0;
-  left: 0.72rem;
-  overflow: hidden;
-}
-#content .withDrawAmount .amountPassword .input #special {
-  display: block;
-  width: 6.4rem;
-  height: 1.6rem;
-  line-height: 1.6rem;
-  font-size: 0.64rem;
-  letter-spacing: 1.32rem;
-  background: transparent;
-  text-align: left;
-}
-#content .totalBtn {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 0.8rem;
-  height: 1.6rem;
-  border-radius: 0.16rem;
-  background-color: #dddddd;
-  color: #fff;
-  line-height: 1.6rem;
-  font-size: 0.72rem;
-  text-align: center;
-}
-#content .totalBtn.active {
-  background-color: #ef4f4f;
+  background: url(../img/next.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
+  top: 0.6rem;
+  right: 0.6rem;
 }

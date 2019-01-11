@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title></title>
+	<link rel="stylesheet" href="../../css/newMember.css">
+	<script src="../../js/jquery-1.11.0.min.js"></script>
+	<script src="../../js/newMember.js"></script>
+</head>
+<body>
+	<header>
+		<a class="back" href="./proxyMember.html"></a>
+		<div class="mainTitle">新增会员</div>
+	</header>
+	<div id="content">
+		<div class="name">
+			<input class="userName" type="text" placeholder="请输入会员名">
+		</div>
+		<div class="password">
+			<input class="passWord" type="text" placeholder="请输入密码">
+		</div>
+		<div class="type">
+			<p class="title">用户类别：</p>
+			<div class="proxy active">代理</div>
+			<div class="member">会员</div>
+		</div>
+		<div class="percent">
+				<p class="title">代理返点</p>
+				<p class="con"><span class="span1">7.5</span>%(<span class="span2">1950</span>)</p>
+			</div>
+		<div class="slider">
+				<div class="leftSection">
+					<p class="p1">1800</p>
+					<p class="p2">0.0%</p>
+				</div>
+				<div class="midSection">
+					<div class="lineWrap">
+						<div class="line"></div>
+					</div>
+					<div class="ball"></div>
+				</div>
+				<div class="rightSection">
+					<p class="p1">1970</p>
+					<p class="p2">8.5%</p>
+				</div>
+			</div>
+	</div>
+	<div class="totalBtn">创建新会员</div>
+	<div id="mask"></div>
+	<div id="dialog">
+		<div class="ulWrap">
+			<ul></ul>
+		</div>
+		<div class="wrap">
+			<div class="cancel">取消</div>
+			<div class="sure">确定</div>
+		</div>
+		<div class="mask"></div>
+	</div>
+	<script src="../../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  margin-top: 1.76rem;
+  background-color: #eee;
+}
+header {
+  z-index: 105;
+  width: 100%;
+  height: 1.76rem;
+  background-color: #0099df;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .back {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url(../img/back.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+header .mainTitle {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  position: absolute;
+  top: 0.48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .free {
+  height: 0.64rem;
+  position: absolute;
+  line-height: 0.64rem;
+  font-size: 0.64rem;
+  color: #fff;
+  right: 2%;
+  top: 0.56rem;
+}
+header .free span {
+  float: right;
+  width: 0.64rem;
+  height: 0.32rem;
+  margin-top: 0.24rem;
+  background: url(../img/downArrow.png) no-repeat;
+  background-size: 0.64rem 0.32rem;
+}
+#content {
+  width: 100%;
+}
+#content .datePicker {
+  width: 100%;
+  height: 2.24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.04rem solid #f3f3f3;
+  background-color: #fff;
+}
+#content .datePicker .start,
+#content .datePicker .finish {
+  width: 30%;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.52rem;
+  border-radius: 0.64rem;
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: center;
+}
+#content .datePicker .to {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.64rem;
+}
+#content .datePicker .type {
+  width: 20%;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  font-size: 0.64rem;
+  position: relative;
+}
+#content .datePicker .type .downA {
+  float: right;
+  width: 0.8rem;
+  height: 0.4rem;
+  margin-top: 0.52rem;
+  margin-right: 0.56rem;
+  background: url(../img/downArrow.png) no-repeat;
+  background-size: 0.8rem 0.4rem;
+}
+#content .datePicker .type #finalDialog {
+  display: none;
+  z-index: 113;
+  width: 3rem;
+  padding: 0.2rem 0.6rem;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  border-radius: 0.2rem;
+}
+#content .datePicker .type #finalDialog ul {
+  width: 100%;
+}
+#content .datePicker .type #finalDialog ul li {
+  width: 100%;
+  height: 1.2rem;
+  border-bottom: 0.04rem solid #ccc;
+  line-height: 1.2rem;
+  font-size: 0.64rem;
+  text-align: center;
+}
+#content .calc {
+  width: 100%;
+  height: 3.6rem;
+  margin: 0.4rem 0;
+  padding: 0 0.6rem;
+  box-sizing: border-box;
+}
+#content .calc .totalCalc {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #757575;
+}
+#content .calc .wrap {
+  width: 100%;
+  height: 2.48rem;
+  margin-top: 0.4rem;
+}
+#content .calc .wrap .commission,
+#content .calc .wrap .cathectic {
+  width: 40%;
+  height: 2.48rem;
+  float: left;
+  background: url(../img/proxyCommission.png) no-repeat;
+  background-size: 1.6rem 1.12rem;
+  background-position: 0.2rem center;
+  background-color: #fff;
+  padding-left: 16%;
+  box-sizing: border-box;
+}
+#content .calc .wrap .commission:nth-of-type(2),
+#content .calc .wrap .cathectic:nth-of-type(2) {
+  background: url(../img/proxyAmount.png) no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: 0.2rem center;
+  background-color: #fff;
+}
+#content .calc .wrap .commission .title,
+#content .calc .wrap .cathectic .title {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #999999;
+  margin-top: 0.4rem;
+}
+#content .calc .wrap .commission .con,
+#content .calc .wrap .cathectic .con {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #999999;
+  margin-top: 0.4rem;
+}
+#content .calc .wrap .cathectic {
+  float: right;
+}
+#content .nav {
+  width: 100%;
+  height: 1.84rem;
+  background-color: #0099df;
+  display: flex;
+  justify-content: space-around;
+}
+#content .nav .item {
+  width: 33.33%;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  font-size: 0.64rem;
+  color: #fff;
+  text-align: center;
+}
+#content .conUl {
+  width: 100%;
+}
+#content .conUl li {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 0.04rem solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+#content .conUl li span {
+  width: 30%;
+  line-height: 1.2em;
+  font-size: 0.56rem;
+  word-wrap: break-word;
+  word-break: normal;
+  text-align: center;
+}
+#mask {
+  display: none;
+  z-index: 103;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#dateDialog {
+  display: none;
+  z-index: 104;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
+  background-color: #fff;
+}
+#dateDialog .topBtns {
+  width: 100%;
+  height: 1.6rem;
+  border-bottom: 0.04rem solid #eee;
+}
+#dateDialog .topBtns .cancel {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .topBtns .sure {
+  width: 50%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.64rem;
+  color: #26a2ff;
+  text-align: center;
+  float: left;
+}
+#dateDialog .bot {
+  width: 100%;
+  height: 10.36rem;
+}
+#dateDialog .bot .year {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .year ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .year ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .month {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .month ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .month ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .bot .day {
+  z-index: 105;
+  float: left;
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#dateDialog .bot .day ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#dateDialog .bot .day ul li {
+  width: 100%;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.72rem;
+  color: #a6a6a7;
+  text-align: center;
+}
+#dateDialog .mask {
+  width: 100%;
+  height: 1.44rem;
+  position: absolute;
+  top: 3.08rem;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 104;
+}
+#mask {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}

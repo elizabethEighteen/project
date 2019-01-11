@@ -59,6 +59,7 @@ p {
 }
 /*变量*/
 footer {
+  z-index: 110;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -170,14 +171,14 @@ header .bottom {
   position: absolute;
   top: 1.76rem;
   left: 0;
-  border-top: 0.04rem solid #1c14c8;
+  border-top: 0.04rem solid #eee;
 }
 header .bottom .leftBtn {
   width: 25%;
   height: 1.4rem;
   position: absolute;
   box-shadow: 0.04rem 0 0.12rem rgba(0, 0, 0, 0.16);
-  border-top: 0.04rem solid #1c14c8;
+  border-top: 0.04rem solid #eee;
   left: 0;
   top: -0.04rem;
 }
@@ -185,6 +186,7 @@ header .bottom .leftBtn a {
   display: block;
   width: 2.4rem;
   height: 0.64rem;
+  padding: 0 0.12rem;
   line-height: 0.64rem;
   border-radius: 0.32rem;
   text-align: center;
@@ -196,7 +198,7 @@ header .bottom .leftBtn a {
   transform: translate(-50%, -50%);
 }
 header .bottom .leftBtn a.active {
-  background-color: #a50018;
+  background-color: #2ab7ef;
 }
 header .bottom .rightSlider {
   width: 75%;
@@ -226,11 +228,11 @@ header .bottom .rightSlider ul li div {
   border-radius: 0.32rem;
   font-size: 0.52rem;
   color: #fff;
-  padding: 0 0.08rem;
+  padding: 0 0.32rem;
   box-sizing: border-box;
 }
-header .bottom .rightSlider ul li div.active {
-  background-color: #a50018;
+header .bottom .rightSlider ul li.active div {
+  background-color: #2ab7ef;
 }
 #content {
   width: 100%;

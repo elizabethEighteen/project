@@ -91,11 +91,63 @@ header .mainTitle {
 }
 #content {
   width: 100%;
+  padding-bottom: 0.8rem;
 }
 #content img {
   display: block;
   width: 8rem;
   height: 8rem;
-  margin: 4rem auto;
+  margin: 0rem auto;
+  margin-top: 4rem;
   background-color: green;
+}
+#content .wrap {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 0.8rem;
+  box-shadow: 0 0.08rem 0.36rem 0.04rem #999;
+  padding: 0.8rem 0;
+  border-radius: 0.16rem;
+}
+#content .wrap ul {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 0.8rem;
+}
+#content .wrap ul li {
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  margin-bottom: 0.8rem;
+  border-radius: 0.16rem;
+}
+#content .wrap ul li p {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.64rem;
+  padding-left: 0.8rem;
+}
+#content .wrap ul li input {
+  width: calc(90% - 3rem);
+  height: 1.68rem;
+  float: left;
+  font-size: 0.64rem;
+}
+#content .wrap .totalbtn {
+  display: block;
+  width: 90%;
+  height: 1.6rem;
+  margin-left: 5%;
+  line-height: 1.6rem;
+  font-size: 0.72rem;
+  background-color: #c6c6c6;
+  box-shadow: 0 0 1px #9b9a9a;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.16rem;
+}
+#content .wrap .totalbtn.active {
+  background-color: #0099df;
 }

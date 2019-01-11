@@ -1,0 +1,293 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  margin-top: 1.76rem;
+  margin-bottom: 2rem;
+  background-color: #f7f6f6;
+}
+header {
+  z-index: 105;
+  width: 100%;
+  height: 1.76rem;
+  background-color: #0099df;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .back {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url(../img/back.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+header .mainTitle {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  position: absolute;
+  top: 0.48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#oneMoretime {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #0099df;
+}
+#content {
+  width: 100%;
+}
+#content .one {
+  width: 100%;
+  height: 2.44rem;
+  border-bottom: 0.04rem solid #ccc;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#content .one img {
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+  margin-left: 30%;
+}
+#content .one .oneWrap {
+  width: calc(70% - 2rem);
+  float: right;
+  height: 1.6rem;
+}
+#content .one .oneWrap .type {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.64rem;
+}
+#content .one .oneWrap .time {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #999;
+}
+#content .two {
+  width: 100%;
+  height: 2.44rem;
+  background-color: #fff;
+  border-bottom: 0.04rem solid #ccc;
+  box-sizing: border-box;
+  padding: 0.4rem 0;
+}
+#content .two .leftSection {
+  width: 50%;
+  height: 1.6rem;
+  border-right: 0.04rem solid #ccc;
+  float: left;
+  box-sizing: border-box;
+}
+#content .two .leftSection .title {
+  width: 3.4rem;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #93876a;
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+  background: url(../img/catheticDetailAmount.png) no-repeat;
+  background-size: 0.56rem 0.56rem;
+  background-position: 0 center;
+  text-align: center;
+  transform: translateX(0.4rem);
+}
+#content .two .leftSection .con {
+  width: 50%;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #93876a;
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+#content .two .rightSection {
+  width: 50%;
+  height: 1.6rem;
+  float: right;
+}
+#content .two .rightSection .title {
+  width: 3.4rem;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #93876a;
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+  background: url(../img/noPrize.png) no-repeat;
+  background-size: 0.56rem 0.56rem;
+  background-position: 0 center;
+  text-align: center;
+  transform: translateX(0.4rem);
+}
+#content .two .rightSection .title.active {
+  background: url(../img/catheticPrize.png) no-repeat;
+  background-size: 0.56rem 0.56rem;
+  background-position: 0 center;
+}
+#content .two .rightSection .con {
+  width: 50%;
+  margin: 0 auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #93876a;
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+#content .three {
+  width: 100%;
+  height: 1.12rem;
+  border-bottom: 0.04rem solid #ccc;
+  line-height: 1.12rem;
+  font-size: 0.64rem;
+  color: #999;
+  text-indent: 1em;
+}
+#content .four {
+  width: 100%;
+  padding: 0.8rem 0.4rem 1.2rem;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+}
+#content .four ul {
+  width: 100%;
+}
+#content .four ul li {
+  width: 100%;
+  height: 0.96rem;
+}
+#content .four ul li .title {
+  float: left;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.48rem;
+  color: #999;
+}
+#content .four ul li .con {
+  float: left;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.48rem;
+  color: #333333;
+}
+#content .four ul li.special {
+  width: 100%;
+  height: 0.96rem;
+  margin-bottom: 0.12rem;
+}
+#content .four ul li.special .balls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .four ul li.special .balls span {
+  width: 0.88rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.56rem;
+  text-align: center;
+  background-color: #0099df;
+  color: #fff;
+}
+#content .four .image {
+  width: 6.4rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.8rem;
+  background: url(../img/noCongratulations.png) no-repeat;
+  background-size: 6.4rem 4rem;
+}
+#content .four .image.active {
+  width: 8.88rem;
+  height: 3.2rem;
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.8rem;
+  background: url(../img/congratulations.png) no-repeat;
+  background-size: 8.88rem 3.2rem;
+}

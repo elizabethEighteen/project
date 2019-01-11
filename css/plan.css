@@ -153,10 +153,10 @@ header .changeType span {
   position: relative;
 }
 #content table tbody tr td:nth-of-type(1) {
-  width: 15%;
+  width: 20%;
 }
 #content table tbody tr td:nth-of-type(2) {
-  width: 10%;
+  width: 15%;
 }
 #content table tbody tr td:nth-of-type(2).active div {
   width: 0.8rem;
@@ -211,22 +211,10 @@ header .changeType span {
   transform: translateX(10%);
 }
 #content table tbody tr td:nth-of-type(4) {
-  width: 10%;
-}
-#content table tbody tr td:nth-of-type(5) {
-  width: 13%;
-}
-#content table tbody tr td:nth-of-type(6) {
-  width: 12%;
-}
-#content table tbody tr td:nth-of-type(6) div {
-  color: #005dcc;
-}
-#content table tbody tr td:nth-of-type(6).red div {
-  color: #ec0022;
+  width: 20%;
 }
 #content table tbody tr td:nth-of-type(7) {
-  width: 15%;
+  width: 20%;
 }
 #mask {
   display: none;

@@ -87,4 +87,21 @@ $(function(){
          window.location.href = './html/register.html?loginType=index';
       })
    })();
+   //dialog
+   (function(){
+      var $mask = $('#mask');
+      var $dialog = $('#dialog');
+      var $liTitle =  $('#dialog .lititle');
+      var $licon = $('#dialog .licon');
+      var $close = $('#dialog .close');
+      $close.on('click',function(){
+         $mask.hide();
+         $dialog.hide();
+      });
+      $liTitle.on('click',function(){
+         // $(this).toggleClass('active');
+         // $(this).siblings('.licon').hide();
+         $(this).next().toggle();
+      })
+   })();
 });

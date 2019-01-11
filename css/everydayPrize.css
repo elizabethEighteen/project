@@ -1,0 +1,283 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  z-index: 102;
+}
+header {
+  width: 100%;
+  height: 12rem;
+  position: relative;
+  background: url(../img/eveydayPrizeBg.png) no-repeat;
+  background-size: 100% 12rem;
+}
+header .back {
+  width: 1.2rem;
+  height: 0.8rem;
+  background: url(../img/back.png) no-repeat;
+  background-size: 0.44rem 0.8rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+header .mainTitle {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  position: absolute;
+  top: 0.48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .leftSection {
+  width: 50%;
+  height: 2.4rem;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  border-right: 0.04rem solid #fff;
+  box-sizing: border-box;
+}
+header .leftSection .title {
+  width: 100%;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.72rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+header .leftSection .con {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+header .rightSection {
+  width: 50%;
+  height: 2.4rem;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  border-left: 0.04rem solid #fff;
+  box-sizing: border-box;
+}
+header .rightSection .title {
+  width: 100%;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.72rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+header .rightSection .con {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+#content {
+  width: 90%;
+  margin-left: 5%;
+  z-index: 103;
+  transform: translateY(-2.4rem);
+}
+#content .item {
+  width: 100%;
+}
+#content .item .titleSection {
+  width: 100%;
+  height: 3.2rem;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.08rem 0.36rem 0.04rem #0099df;
+}
+#content .item .titleSection .leftImage {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 0.48rem;
+  color: #fff;
+  border-radius: 100%;
+  background: url(../img/sixAngle.png) no-repeat;
+  background-size: 2.4rem 2.4rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.6rem;
+  text-align: center;
+}
+#content .item .titleSection .mid {
+  width: calc(100% - 4.8rem);
+  height: 3.2rem;
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+}
+#content .item .titleSection .mid .title {
+  width: 80%;
+  margin-left: 10%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.56rem;
+}
+#content .item .titleSection .mid .con {
+  width: 80%;
+  margin-left: 10%;
+  line-height: 1.2em;
+  font-size: 0.56rem;
+  color: #ccc;
+}
+#content .item .titleSection .rightSection {
+  width: 1.6rem;
+  height: 3.2rem;
+  line-height: 1.2em;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  font-size: 0.64rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0099df;
+}
+#content .item .hideSection {
+  display: none;
+  width: 100%;
+  box-shadow: 0 0.08rem 0.36rem 0.04rem #0099df;
+  margin-bottom: 1rem;
+}
+#content .item .hideSection ul {
+  width: 100%;
+}
+#content .item .hideSection ul li {
+  width: 96%;
+  padding: 0.4rem 0;
+  position: relative;
+  border-bottom: 0.04rem solid #eee;
+}
+#content .item .hideSection ul li .script {
+  width: 80%;
+  line-height: 1.3em;
+  font-size: 0.56rem;
+  color: #999;
+}
+#content .item .hideSection ul li a {
+  position: absolute;
+  top: 0.24rem;
+  right: -0.08rem;
+  background-color: #999;
+  color: #fff;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.16rem;
+}
+#content .item .hideSection .loadMore {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: #ccc;
+  text-align: center;
+}
+#mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 111;
+  top: 0;
+  left: 0;
+}
+#dialog {
+  width: 8rem;
+  height: 16rem;
+  position: fixed;
+  top: 5.2rem;
+  left: 3.48rem;
+  z-index: 112;
+}
+#dialog .big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 10rem;
+}
+#dialog .close {
+  position: absolute;
+  top: 10.8rem;
+  left: 3.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}

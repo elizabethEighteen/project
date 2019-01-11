@@ -243,5 +243,50 @@ header {
 	.three {
 		display: none;
 		width: 100%;
+		ul {
+			width: 100%;
+			li {
+				width: 90%;
+				padding: 0 5%;
+				height: 58/@r;
+				border-bottom: 1/@r solid #ccc;
+				position: relative;
+				background-color: #fff;
+				&:last-child {
+					// border-bottom: none;
+				}
+				.p1 {
+					width: 45%;
+					height: 14/@r;
+					color: rgb(3,3,3);
+					line-height: 14/@r;
+					font-size: 14/@r;
+					position: absolute;
+					top: 10/@r;
+					left: 5%;
+				}
+				.date {
+					width: 45%;
+					height: 10/@r;
+					font-size: 10/@r;
+					line-height: 10/@r;
+					color: rgb(150,150,150);
+					position: absolute;
+					left: 5%;
+					bottom: 10/@r;
+				}
+				.ammount {
+					width: 45%;
+					height: 58/@r;
+					line-height: 58/@r;
+					font-size: 12/@r;
+					color: rgb(255,59,50);
+					position: absolute;
+					top: 0;
+					right: 5%;
+					text-align: right;
+				}
+			}
+		}
 	}
 }

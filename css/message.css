@@ -100,6 +100,16 @@ header .mainTitle {
   background: url(../img/bigLogo.jpg) no-repeat;
   background-size: 100% 6.4rem;
 }
+#content .bg .hello {
+  width: 100%;
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.64rem;
+  position: absolute;
+  color: #fff;
+  top: 1rem;
+}
 #content .mid {
   width: 90%;
   height: 6.48rem;

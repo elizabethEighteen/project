@@ -1,4 +1,13 @@
 $(function(){
+	sieveRun([1,2,3]);
+	//清除
+	(function(){
+		var $btn = $('footer .p2');
+		$btn.on('click',function(){
+			clearBalls();
+			// console.log(1);
+		});
+	})();
 	//nav
 	(function(){
 		var $btns = $('#top1 .nav .item');
@@ -37,4 +46,71 @@ $(function(){
 			isShow = false;
 		});
 	})();
+	//投注弹窗
+	(function(){
+		var $btn = $('footer .cathectic');
+		var $mask = $('#mask');
+		var $phurchasesDialog = $('#phurchasesDialog');
+		var $close = $phurchasesDialog.find('.close');
+		var $null = $phurchasesDialog.find('.null');
+		var $blank = $phurchasesDialog.find('.blank');
+		var $sure = $phurchasesDialog.find('.sure');
+		$btn.on('click',function(){
+			$mask.show();
+			$phurchasesDialog.show();
+		});
+		$close.on('click',function(){
+			$mask.hide()
+			$phurchasesDialog.hide();
+		});
+		$null.on('click',function(){
+			$mask.hide()
+			$phurchasesDialog.hide();
+		});
+		$blank.on('click',function(){
+			$mask.hide()
+			$phurchasesDialog.hide();
+		});
+		$sure.on('click',function(){
+			$mask.hide()
+			$phurchasesDialog.hide();
+		});
+	})();
+	//选彩票
+	(function(){
+		//数字盘
+		var $oneBalls = $('#content1 .ul1 .balls .item');
+		$oneBalls.on('click',function(){
+			$(this).toggleClass('active');
+		})
+		
+		//双面盘
+		var $oneBalls = $('#content1 .ul2 .balls .item');
+		$oneBalls.on('click',function(){
+			$(this).toggleClass('active');
+		})
+		//冠军和值
+		var $oneBalls = $('#content1 .ul3 .balls .item');
+		$oneBalls.on('click',function(){
+			$(this).toggleClass('active');
+		})
+	})();
+	//设置筛子
+	function sieveRun (array) {
+		var arr = ['../img/sieveOne.png','../img/sieveTwo.png','../img/sieveThree.png',
+		'../img/sieveFour.png','../img/sieveFive.png','../img/sieveSix.png']
+		var $balls = $('#top1 .balls');
+		for (var i=0; i<3; i++) {
+			console.log(arr[(array[i]-1)]);
+			$balls.find('img').eq(i)[0].src = arr[(array[i]-1)];
+		}
+	}
+	function clearBalls (){
+		var $balls = $('#content1 li .balls .item');
+
+		for (var i = 0; i<$balls.length; i++) {
+			// console.log(i);
+			$balls.eq(i).removeClass('active');
+		}
+	}
 });
